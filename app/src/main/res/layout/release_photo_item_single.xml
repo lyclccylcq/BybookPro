@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/release_photo_img"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/release_photo_del"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:text="删除"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

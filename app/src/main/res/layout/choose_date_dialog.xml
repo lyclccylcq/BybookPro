@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/choose_dialog_bg"
+    tools:context=".ui.ImpairOrderActivity">
+    <include layout="@layout/common_top_bar"
+        android:id="@+id/choose_date_top"/>
+    <CalendarView
+        android:id="@+id/choose_date_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/choose_date_cancel"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/main_color"
+            android:background="@drawable/round_bg_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/choose_date_confirm"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:background="@drawable/round_bg_3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

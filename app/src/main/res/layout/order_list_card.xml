@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    android:id="@+id/purchase_card_root"
+    android:background="@drawable/choose_dialog_bg">
+
+    <TextView
+        android:id="@+id/order_list_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="NIO  ES8 2022终极版"
+        android:textColor="@color/main_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/order_list_car_img"
+        android:layout_below="@id/order_list_car_name"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ec6"/>
+
+    <TextView
+        android:id="@+id/order_list_car_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="处理中"
+        android:textColor="@color/tips_color"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/order_list_car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_list_car_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="购入价格：383,000"
+        android:textColor="@color/main_color"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/order_list_car_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="交付地：湖北武汉"
+        android:layout_below="@id/order_list_car_price"
+        android:textColor="@color/main_color"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/order_list_car_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="创建时间：2022-6-1"
+        android:layout_below="@id/order_list_car_address"
+        android:textColor="@color/main_color"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/order_list_car_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="修改时间：2022-6-2"
+        android:layout_below="@id/order_list_car_create_time"
+        android:textColor="@color/main_color"
+        android:textSize="15dp" />
+    <LinearLayout
+        android:id="@+id/order_list_car_btn"
+        android:background="@drawable/round_bg_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消订单"
+            android:id="@+id/order_list_car_btn_tv"
+            android:textColor="@color/tips_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

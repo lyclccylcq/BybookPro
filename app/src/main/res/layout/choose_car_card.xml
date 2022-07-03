@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/choose_car_card_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="NIO  ES8"
+        android:textColor="@color/main_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/choose_car_card_card_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_car_card_card_title"
+        android:layout_marginLeft="25dp"
+        android:text="预约试驾"
+        android:textColor="@color/main_color"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/choose_car_card_card_img"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/es8_1" />
+
+    <View
+        android:background="@color/spin_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

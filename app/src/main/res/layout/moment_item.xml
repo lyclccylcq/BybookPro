@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/moment_item_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_mine_avatar" />
+
+    <TextView
+        android:id="@+id/moment_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/moment_item_avatar"
+        android:text="Bycar用户"
+        android:textColor="@color/main_color"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/moment_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moment_item_avatar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="4"
+        android:text="x\nx\nx\nx\nx\n"
+        android:textColor="@color/main_color"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/moment_item_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moment_item_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="....."
+        android:textColor="@color/sub_color"
+        android:textSize="14dp" />
+    <com.lzhihua.bycar.ui.view.MultiImageView
+        android:layout_below="@id/moment_item_more"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/moment_item_multiimg"/>
+    <TextView
+        android:layout_below="@id/moment_item_multiimg"
+        android:textColor="@color/sub_color"
+        android:textSize="14dp"
+        android:layout_margin="10dp"
+        android:id="@+id/moment_item_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022 4-16 19:00"/>
+
+    <ImageView
+        android:id="@+id/moment_item_comment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/moment_item_multiimg"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/moment_item_comment_num"
+        android:src="@drawable/comment_not_select" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/moment_item_comment_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moment_item_multiimg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/moment_item_like"
+        android:text="20"
+        android:textColor="@color/sub_color"
+        android:textSize="14dp" />
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/moment_item_multiimg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/like_not_select"
+        android:id="@+id/moment_item_like"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/moment_item_del"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moment_item_like"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="删除"
+        android:background="@color/tips_color"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="14dp"-->
+<!--        android:textColor="@color/sub_color"-->
+<!--        android:text="查看更多"/>-->
+</RelativeLayout>

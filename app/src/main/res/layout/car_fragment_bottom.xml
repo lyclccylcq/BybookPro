@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="30dp"
+    android:layout_height="match_parent">
+<!--车主说-->
+<!--    精选服务-->
+<!--    免责声明-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sub_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="12dp"
+        android:text="*不同车型价格有所不同，请在购车详情页查看\n*购车费用仅为车辆本身费用，其他如税费、保险需车主支付，电动车辆的续航根据实验室调剂测量而来，具体使用会存在差异"/>
+</LinearLayout>

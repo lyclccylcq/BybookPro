@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/round_bg_7"
+    android:layout_height="350dp">
+    <TextView
+        android:id="@+id/manager_order_card_tv1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="订单信息"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_bg_4"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="未完成,去完成"
+        android:textColor="@color/tips_color"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/manager_order_card_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manager_order_card_tv1"
+        android:layout_marginLeft="15dp"
+        android:text="订单id：1"
+        android:textColor="@color/main_color"
+        android:textSize="16dp" />
+    <TextView
+        android:layout_below="@id/manager_order_card_id"
+        android:id="@+id/manager_order_card_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="订单价格：￥383000.0"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/main_color"/>
+    <TextView
+        android:layout_below="@id/manager_order_card_price"
+        android:layout_marginTop="5dp"
+        android:id="@+id/manager_order_card_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交付地址：湖北武汉"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/manager_order_card_create_time"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/manager_order_card_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建时间：2022-6-1 13:00"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/main_color"/>
+    <TextView
+        android:id="@+id/manager_order_card_update_time"
+        android:layout_below="@id/manager_order_card_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新时间：2022-9-1 15:00"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/manager_order_card_tv2"
+        android:layout_below="@id/manager_order_card_update_time"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:text="车辆信息"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/manager_order_card_car_name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/manager_order_card_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车型系列名：es8"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/main_color"/>
+    <TextView
+        android:id="@+id/manager_order_card_car_version"
+        android:layout_below="@id/manager_order_card_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车辆版本：运动版"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/main_color"/>
+    <TextView
+        android:id="@+id/manager_order_card_car_price"
+        android:layout_below="@id/manager_order_card_car_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基础价格：运动版"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/main_color"/>
+    <ImageView
+        android:id="@+id/manager_order_card_car_img"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="130dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="100dp"
+        android:src="@drawable/es8"/>
+
+    <include
+        android:id="@+id/manager_order_card_know_more"
+        layout="@layout/card_know_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+</RelativeLayout>

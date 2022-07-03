@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:elevation="3dp"
+    android:padding="10dp"
+    android:id="@+id/purchase_card_root"
+    android:background="@drawable/purchase_item">
+
+    <TextView
+        android:id="@+id/purchase_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="es8"
+        android:textColor="@color/main_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/purchase_card_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/purchase_card_name"
+        android:text="首发版"
+        android:textColor="@color/main_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/purchase_card_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_card_description"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="￥ 33.8万起"
+        android:textColor="@color/tips_color"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/purchase_card_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_card_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="电动智能旗舰轿车"
+        android:textColor="@color/main_color"
+        android:textSize="12dp" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/purchase_card_buy"
+        android:background="@drawable/round_bg_1"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/purchase_card_price"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="即刻下单"
+            android:id="@+id/order_list_car_btn_tv"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/purchase_card_img"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/es8_1" />
+</RelativeLayout>

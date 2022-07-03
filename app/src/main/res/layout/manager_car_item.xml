@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/round_bg_7"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/manage_car_item_top_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/manage_car_car_ic" />
+
+    <TextView
+        android:id="@+id/manage_car_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="ET 7"
+        android:textColor="@color/main_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/manage_car_item_img"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/manage_car_item_name"
+        android:src="@drawable/et7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/manage_car_item_img"
+        android:layout_below="@id/manage_car_item_name"
+        android:id="@+id/manage_car_item_version"
+        android:text="版本：首发版"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/main_color"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/manage_car_item_img"
+        android:layout_below="@id/manage_car_item_version"
+        android:id="@+id/manage_car_item_price"
+        android:text="价格：￥ 383000.0"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/main_color"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/manage_car_item_img"
+        android:layout_below="@id/manage_car_item_price"
+        android:id="@+id/manage_car_item_des"
+        android:text="描述：智能电动旗舰轿车"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/manage_car_item_del"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_bg_4"
+        android:gravity="center"
+        android:text="删除车辆"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/tips_color"
+        android:textSize="16dp" />
+</RelativeLayout>

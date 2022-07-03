@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/round_dialog"
+    android:layout_height="match_parent"
+    tools:context="com.Syufei.bybook.ui.dialog.LoginDialog">
+
+<!--    注册模块-->
+   <ViewStub
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/login_create_user"
+       android:layout="@layout/create_user"/>
+<!--    登录模块-->
+   <ViewStub
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:id="@+id/login_login_user"
+      android:layout="@layout/login"/>
+<!--   忘记密码-->
+   <ViewStub
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/forget_psw"
+       android:layout="@layout/create_user"/>
+</LinearLayout>

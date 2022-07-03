@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="orderArray">
+        <item>筛选</item>
+        <item>已取消</item>
+        <item>已完成</item>
+        <item>待处理</item>
+        <item>待完成</item>
+    </string-array>
+</resources>

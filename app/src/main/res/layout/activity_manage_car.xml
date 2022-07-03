@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/spin_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Syufei.bybook.ui.ManageCarActivity">
+    <include layout="@layout/common_top_bar"
+        android:id="@+id/manage_car_top_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/manage_car_select_list"
+            android:textSize="16dp"
+            android:textColor="@color/tips_color"
+            android:text="车辆列表"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/manage_car_select_add"
+            android:textSize="16dp"
+            android:clickable="true"
+            android:textColor="@color/main_color"
+            android:text="添加车辆"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/manage_car_refresh">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/spin_color"
+            android:id="@+id/manage_car_recycler" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/manager_car_add_car_dialog"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:id="@+id/manage_car_addcar"/>
+</LinearLayout>

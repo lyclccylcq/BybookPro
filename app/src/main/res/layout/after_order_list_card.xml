@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/after_order_list_car_top_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/after_order_caring"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待支付"
+        android:textColor="@color/tips_color"
+        android:textSize="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/after_order_list_car_status"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车辆系列名：ET7"
+        android:layout_below="@id/after_order_list_car_top_img"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/after_order_list_car_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车辆版本：首发版"
+        android:layout_below="@id/after_order_list_car_name"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/after_order_list_car_version"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名：zhihualuo68@gamil.com"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/after_order_list_car_version"
+        android:layout_marginTop="10dp"
+        android:id="@+id/after_order_list_user_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维修地址：湖北武汉"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/after_order_list_user_id"
+        android:layout_marginTop="10dp"
+        android:id="@+id/after_order_list_address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建时间：2022-4-3 19:00"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/after_order_list_address"
+        android:layout_marginTop="10dp"
+        android:id="@+id/after_order_list_create_time"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新时间：2022-4-5 21:00"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/after_order_list_create_time"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/after_order_list_update_time"/>
+
+    <TextView
+        android:id="@+id/after_order_list_car_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_bg_3"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textSize="14dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:text="去支付"
+        android:textColor="@color/white" />
+</RelativeLayout>

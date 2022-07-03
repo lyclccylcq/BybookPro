@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:elevation="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/manage_try_car_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:text="试驾编号：1"/>
+    <TextView
+        android:id="@+id/manage_try_car_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:text="试驾地点：湖北武汉"/>
+    <TextView
+        android:id="@+id/manage_try_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:text="试驾车辆：ES9"/>
+    <TextView
+        android:id="@+id/manage_try_car_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:text="联系电话：1239485672"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看更多"
+        android:gravity="center"
+        android:textColor="@color/sub_color"
+        android:id="@+id/manage_try_car_more"
+        android:textSize="14dp"/>
+
+</LinearLayout>

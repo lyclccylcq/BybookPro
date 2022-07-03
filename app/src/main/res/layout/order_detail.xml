@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <include layout="@layout/common_top_bar"
+            android:id="@+id/create_order_top"/>
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/create_order_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="基本信息"
+                android:textColor="@color/main_color"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/create_order_img"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ec6" />
+
+            <TextView
+                android:id="@+id/create_order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_order_tv1"
+                android:layout_marginBottom="10dp"
+                android:text="车型：NIO ec6"
+                android:textColor="@color/main_color"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/create_order_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/create_order_name"
+                android:text="版本：运行型"
+                android:textColor="@color/main_color"
+                android:textSize="16dp"/>
+
+
+            <TextView
+                android:id="@+id/create_order_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_order_version"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="购买信息"
+                android:textColor="@color/main_color"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_below="@id/create_order_tv2"
+                android:id="@+id/create_order_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="交付城市"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/order_car_city_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:hint="请选择城市"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_right_array" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/create_order_city"
+                android:id="@+id/create_order_receiver"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="购车人"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/create_order_receiver_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:background="@null"
+                    android:hint="输入车主姓名"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_right_array" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/create_order_receiver"
+                android:id="@+id/create_order_select_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="购车类型"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="个人购车"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+                <CheckBox
+                    android:text="企业购车"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/create_order_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_order_select_type"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="车主信息"
+                android:textColor="@color/main_color"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/create_order_owner_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_order_tv3"
+                android:text="车主即车辆产权所有人，车主姓名和证件号码将使用在机动车销售统一发票，机动车登记证书和机动车驾驶证"
+                android:textColor="@color/sub_color"
+                android:textSize="12dp" />
+            <LinearLayout
+                android:layout_below="@id/create_order_owner_tips"
+                android:id="@+id/create_order_phone"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="联系方式"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/create_order_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:background="@null"
+                    android:hint="输入收货人手机号码"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_right_array" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/create_order_phone"
+                android:id="@+id/create_order_owner_name"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="车主姓名"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/create_order_owner_name_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:background="@null"
+                    android:hint="请输入姓名"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_right_array" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/create_order_owner_name"
+                android:id="@+id/create_order_owner_id_type"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="证件类型"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/create_order_owner_id_type_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:background="@null"
+                    android:hint="请选择证件类型"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_right_array" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/create_order_owner_id_type"
+                android:id="@+id/create_order_owner_id_num"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="证件号码"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/create_order_owner_id_num_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="start"
+                    android:background="@null"
+                    android:hint="请输入证件号"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_right_array" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/create_order_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_order_owner_id_num"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="价格明细"
+                android:textColor="@color/main_color"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_below="@id/create_order_tv4"
+                android:id="@+id/create_order_price_total"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="总价**"
+                    android:textColor="@color/main_color"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/create_order_price_total_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="end"
+                    android:background="@null"
+                    android:text="￥ 390000"
+                    android:textColor="@color/tips_color"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_right_array" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/create_order_price_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_order_price_total"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/spin_color"
+                android:padding="10dp"
+                android:text="* 供参考，具体金额由上牌时补贴政策决定\n\n** 购车价格由当地购车政策决定"
+                android:textColor="@color/sub_color" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/create_order_price_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/tips_color"
+                    android:background="@drawable/round_bg_4"
+                    android:text="去支付"
+                    android:id="@+id/create_order_pay"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/tips_color"
+                    android:background="@drawable/round_bg_4"
+                    android:text="取消订单"
+                    android:id="@+id/create_order_cancel"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="提交订单"
+                    android:textColor="@color/main_color"
+                    android:paddingBottom="10dp"
+                    android:textSize="16dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_bg_1"
+                    android:gravity="center"
+                    android:id="@+id/create_order_commit"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

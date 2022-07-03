@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/choose_dialog_bg"
+    tools:context="com.Syufei.bybook.ui.ImpairOrderActivity">
+    <include layout="@layout/common_top_bar"
+        android:id="@+id/after_order_list_top"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/after_order_list_spinner"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/after_order_list_find"
+            android:entries="@array/after_order_list"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/after_order_list_find"
+            android:layout_width="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/fiter_and_find"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/after_order_list_container"/>
+    </ScrollView>
+
+</LinearLayout>

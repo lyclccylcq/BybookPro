@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.Syufei.bybook.ui.NoticeActivity">
+    <include
+        android:id="@+id/notice_my_score"
+        layout="@layout/notice_my_score"/>
+    <include layout="@layout/about_us"
+        android:visibility="gone"
+        android:id="@+id/notice_about_us"/>
+</RelativeLayout>

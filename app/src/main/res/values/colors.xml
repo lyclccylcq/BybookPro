@@ -6,5 +6,12 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="black_50">#80000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="main_color">#383a51</color>
+    <color name="sub_color">#8c8b9b</color>
+    <color name="spin_color">#f2f2f2</color>
+    <color name="tips_color">#00bcbc</color>
+    <color name="gredient_end">#89C4CA</color>
+    <color name="red">#EB2525</color>
 </resources>

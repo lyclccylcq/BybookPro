@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="after_order_list">
+        <item>维修订单</item>
+        <item>保养订单</item>
+    </string-array>
+</resources>

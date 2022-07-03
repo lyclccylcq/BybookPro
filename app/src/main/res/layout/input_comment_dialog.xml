@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/round_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <include layout="@layout/common_dialog_top"
+        android:id="@+id/input_comment_top"/>
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/input_comment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:textColor="@color/main_color"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:hint="我也来说~"/>
+    </ScrollView>
+    <TextView
+        android:id="@+id/input_comment_send"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/tips_color"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="16dp"
+        android:layout_gravity="right"
+        android:text="发送"/>
+</LinearLayout>

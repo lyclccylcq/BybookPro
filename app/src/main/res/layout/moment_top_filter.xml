@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="20dp"
+    android:background="@color/spin_color"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/moment_top_filter_moment"
+        android:layout_width="0dp"
+        android:text="圈子"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/main_color"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/moment_top_filter_fastway"
+        android:layout_width="0dp"
+        android:text="快速入口"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/sub_color"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>
