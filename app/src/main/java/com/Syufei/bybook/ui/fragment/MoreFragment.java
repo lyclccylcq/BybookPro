@@ -22,16 +22,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
-import com.lzhihua.bycar.MineMomentsActivity;
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CommunityBean;
-import com.lzhihua.bycar.databinding.MoreFragmentBinding;
-import com.lzhihua.bycar.ui.ImpairActivity;
-import com.lzhihua.bycar.ui.PurchaseActivity;
-import com.lzhihua.bycar.ui.ReleaseMessageactivity;
-import com.lzhihua.bycar.ui.TryCarActivity;
-import com.lzhihua.bycar.ui.adapter.MomentItemAdapter;
-import com.lzhihua.bycar.ui.viewmodel.MorefragViewmodel;
+import com.Syufei.bybook.MineMomentsActivity;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.CommunityBean;
+import com.Syufei.bybook.databinding.MoreFragmentBinding;
+import com.Syufei.bybook.ui.ImpairActivity;
+import com.Syufei.bybook.ui.PurchaseActivity;
+import com.Syufei.bybook.ui.ReleaseMessageactivity;
+import com.Syufei.bybook.ui.TryCarActivity;
+import com.Syufei.bybook.ui.adapter.MomentItemAdapter;
+import com.Syufei.bybook.ui.viewmodel.MorefragViewmodel;
 
 import java.util.List;
 

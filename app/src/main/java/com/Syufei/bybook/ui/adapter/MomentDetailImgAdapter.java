@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.lzhihua.bycar.R;
+import com.Syufei.bybook.R;
 
 import java.util.List;
 

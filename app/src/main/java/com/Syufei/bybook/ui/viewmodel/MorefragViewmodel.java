@@ -3,11 +3,11 @@ package com.Syufei.bybook.ui.viewmodel;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.bean.CommunityBean;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.CommunityRepo;
-import com.lzhihua.bycar.ui.adapter.MomentItemAdapter;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.bean.CommunityBean;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.CommunityRepo;
+import com.Syufei.bybook.ui.adapter.MomentItemAdapter;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -153,7 +153,7 @@ public class MorefragViewmodel extends ViewModel {
         CommunityRepo.momentLike(momentId, new DataSuccessListenter() {
             @Override
             public void onDataSuccess(Object obj) {
-                CarBean.CommonResponse commonResponse=(CarBean.CommonResponse) obj;
+                BookBean.CommonResponse commonResponse=(BookBean.CommonResponse) obj;
                 if (commonResponse.getStatus().equals("success")){
                     updateLike.setValue(postion);
                 }

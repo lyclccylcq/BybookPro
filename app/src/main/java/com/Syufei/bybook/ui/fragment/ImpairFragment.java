@@ -12,12 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.databinding.ImpairFragmentBinding;
-import com.lzhihua.bycar.ui.ImpairActivity;
-import com.lzhihua.bycar.ui.ImpairOrderActivity;
-import com.lzhihua.bycar.util.CommonTools;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.databinding.ImpairFragmentBinding;
+import com.Syufei.bybook.ui.ImpairActivity;
+import com.Syufei.bybook.ui.ImpairOrderActivity;
+import com.Syufei.bybook.util.CommonTools;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 

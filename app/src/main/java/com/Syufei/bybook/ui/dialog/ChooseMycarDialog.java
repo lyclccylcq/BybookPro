@@ -9,19 +9,19 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.AfterOrderBean;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.databinding.ChooseCarDialogBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.ImpairRepo;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.AfterOrderBean;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.databinding.ChooseCarDialogBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.ImpairRepo;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 
 public class ChooseMycarDialog extends PopupDialog {
     private ChooseCarDialogBinding chooseCarDialogBinding;
-    private List<AfterOrderBean.SelfCar.Result> carList;
+    private List<AfterOrderBean.SelfBook.Result> carList;
     private String title;
 
     public void setTitle(String title) {
@@ -36,7 +36,7 @@ public class ChooseMycarDialog extends PopupDialog {
         ImpairRepo.getSelfCarList(new DataSuccessListenter() {
             @Override
             public void onDataSuccess(Object obj) {
-                AfterOrderBean.SelfCar selfCar = (AfterOrderBean.SelfCar) obj;
+                AfterOrderBean.SelfBook selfCar = (AfterOrderBean.SelfBook) obj;
                 if (selfCar != null) {
                     carList = selfCar.getData().getList();
                     updateUi();
@@ -60,7 +60,7 @@ public class ChooseMycarDialog extends PopupDialog {
 
     private void updateUi() {
         chooseCarDialogBinding.chooseCarContainer.removeAllViews();
-        for (AfterOrderBean.SelfCar.Result car : carList) {
+        for (AfterOrderBean.SelfBook.Result car : carList) {
             View item = LayoutInflater.from(context).inflate(R.layout.purchase_car_card, null, false);
             RelativeLayout.LayoutParams lp=new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 //            lp.rightMargin=UITools.dip2px(10);

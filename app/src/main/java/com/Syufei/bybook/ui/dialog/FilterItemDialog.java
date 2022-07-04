@@ -8,8 +8,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.commonui.PopupDialog;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.commonui.PopupDialog;
 
 import java.util.List;
 

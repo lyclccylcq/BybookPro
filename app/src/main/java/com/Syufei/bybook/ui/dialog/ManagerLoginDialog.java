@@ -6,14 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.CompoundButton;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.LoginBean;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.databinding.LoginBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.LoginRepo;
-import com.lzhihua.bycar.util.SharedPrefTools;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.LoginBean;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.databinding.LoginBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.LoginRepo;
+import com.Syufei.bybook.util.SharedPrefTools;
+import com.Syufei.bybook.util.UITools;
 
 public class ManagerLoginDialog extends PopupDialog {
     private LoginBinding loginBinding;

@@ -104,7 +104,7 @@ public class CommonDialog extends Dialog {
             @Override
             public void onClick(View v) {
                 if ( onClickBottomListener!= null) {
-                    onClickBottomListener.onNegtiveClick(type);
+                    onClickBottomListener.onNegativeClick(type);
                 }
             }
         });
@@ -188,7 +188,7 @@ public class CommonDialog extends Dialog {
         /**
          * 点击取消按钮事件
          */
-        public void onNegtiveClick(String type);
+        public void onNegativeClick(String type);
     }
 
     public String getMessage() {

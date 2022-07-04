@@ -6,12 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CityList;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.databinding.ChooseCityDialogBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.CityRepo;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.CityList;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.databinding.ChooseCityDialogBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.CityRepo;
 
 import java.util.ArrayList;
 import java.util.List;

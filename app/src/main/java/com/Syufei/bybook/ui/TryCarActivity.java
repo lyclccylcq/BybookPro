@@ -6,15 +6,15 @@ import android.text.TextUtils;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.databinding.ActivityTryCarBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.TryCarRepo;
-import com.lzhihua.bycar.ui.dialog.ChooseCarDialog;
-import com.lzhihua.bycar.ui.dialog.ChooseCityDialog;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.databinding.ActivityTryCarBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.TryBookRepo;
+import com.Syufei.bybook.ui.dialog.ChooseCarDialog;
+import com.Syufei.bybook.ui.dialog.ChooseCityDialog;
+import com.Syufei.bybook.util.UITools;
 
 public class TryCarActivity extends BaseActivity implements PopupDialog.onDismissListener {
     private ActivityTryCarBinding activityTryCarBinding;
@@ -49,10 +49,10 @@ public class TryCarActivity extends BaseActivity implements PopupDialog.onDismis
         activityTryCarBinding.tryCarChooseToTry.setOnClickListener(view -> {
             String address=activityTryCarBinding.tryCarChooseCityName.getText().toString().trim();
             String phone=activityTryCarBinding.tryCarChoosePhoneName.getText().toString().trim();
-            CarBean.CarList.CarListSubData carBean= (CarBean.CarList.CarListSubData) view.getTag();
+            BookBean.BookList.BookListSubData carBean= (BookBean.BookList.BookListSubData) view.getTag();
             if(!TextUtils.isEmpty(address) && !TextUtils.isEmpty(phone) && carBean!=null){
                 progressDialog.show();
-                TryCarRepo.createTryCar(carBean.getId(), address, phone, new DataSuccessListenter() {
+                TryBookRepo.createTryBook(carBean.getId(), address, phone, new DataSuccessListenter() {
                     @Override
                     public void onDataSuccess(Object obj) {
                         UITools.showToast(TryCarActivity.this,"创建成功");
@@ -75,7 +75,7 @@ public class TryCarActivity extends BaseActivity implements PopupDialog.onDismis
             if(!TextUtils.isEmpty(city)){
                 activityTryCarBinding.tryCarChooseCityName.setText(city);
             }
-            CarBean.CarList.CarListSubData carListSubData= (CarBean.CarList.CarListSubData) data.getSerializable("car_bean");
+            BookBean.BookList.BookListSubData carListSubData= (BookBean.BookList.BookListSubData) data.getSerializable("car_bean");
             if (carListSubData!=null){
                 activityTryCarBinding.tryCarChooseCarName.setText(carListSubData.getName());
                 activityTryCarBinding.tryCarChooseToTry.setTag(carListSubData);

@@ -19,13 +19,13 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CommunityBean;
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.CommunityRepo;
-import com.lzhihua.bycar.ui.adapter.ReleaseAdapter;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.CommunityBean;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.CommunityRepo;
+import com.Syufei.bybook.ui.adapter.ReleaseAdapter;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.ArrayList;
 import java.util.List;

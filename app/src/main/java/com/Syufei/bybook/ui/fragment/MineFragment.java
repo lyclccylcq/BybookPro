@@ -10,15 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.databinding.MineFragmentBinding;
-import com.lzhihua.bycar.ui.ImpairOrderActivity;
-import com.lzhihua.bycar.ui.MainActivity;
-import com.lzhihua.bycar.ui.ManagerActivity;
-import com.lzhihua.bycar.ui.NoticeActivity;
-import com.lzhihua.bycar.ui.OrderListActivity;
-import com.lzhihua.bycar.ui.dialog.ChooseMycarDialog;
-import com.lzhihua.bycar.ui.dialog.LoginDialog;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.databinding.MineFragmentBinding;
+import com.Syufei.bybook.ui.ImpairOrderActivity;
+import com.Syufei.bybook.ui.MainActivity;
+import com.Syufei.bybook.ui.ManagerActivity;
+import com.Syufei.bybook.ui.NoticeActivity;
+import com.Syufei.bybook.ui.OrderListActivity;
+import com.Syufei.bybook.ui.dialog.ChooseMycarDialog;
+import com.Syufei.bybook.ui.dialog.LoginDialog;
 
 public class MineFragment extends Fragment implements LoginDialog.DialogListener{
     private MineFragmentBinding mineFragmentBinding;

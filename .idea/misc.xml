@@ -3,6 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/bottom_car.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/bottom_impair.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/bottom_mine.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/bottom_more.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/car_buy_back.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/choose_dialog_bg.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/create_user_btn.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/impair_back.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/login_user_btn.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/order_round_bg.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/purchase_item.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_background.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_1.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_2.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_3.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_4.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_5.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_6.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_7.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_dialog.xml" value="0.1" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/about_us.xml" value="0.1" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_book_detail.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_car_detail.xml" value="0.24139492753623187" />
@@ -55,6 +77,8 @@
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/purchase_car_card.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/release_photo_item_single.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/show_bigimg.xml" value="0.1578125" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

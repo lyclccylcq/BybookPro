@@ -10,11 +10,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CommunityBean;
-import com.lzhihua.bycar.bean.LoginBean;
-import com.lzhihua.bycar.ui.viewmodel.MomentDetailViewmodel;
-import com.lzhihua.bycar.util.CommonTools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.CommunityBean;
+import com.Syufei.bybook.bean.LoginBean;
+import com.Syufei.bybook.ui.viewmodel.MomentDetailViewmodel;
+import com.Syufei.bybook.util.CommonTools;
 
 import java.util.ArrayList;
 import java.util.List;

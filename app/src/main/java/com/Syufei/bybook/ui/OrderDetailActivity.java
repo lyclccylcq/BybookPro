@@ -9,21 +9,21 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.commonui.CommonDialog;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.databinding.OrderDetailBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.OrderRepo;
-import com.lzhihua.bycar.ui.dialog.ChooseCityDialog;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.commonui.CommonDialog;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.databinding.OrderDetailBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.OrderRepo;
+import com.Syufei.bybook.ui.dialog.ChooseCityDialog;
+import com.Syufei.bybook.util.UITools;
 
 public class OrderDetailActivity extends BaseActivity implements PopupDialog.onDismissListener {
 //    订单生成
     private CommonDialog cancelDialog;
-    private CarBean.CarList.CarListSubData carBean;
+    private BookBean.BookList.BookListSubData carBean;
     private OrderDetailBinding orderDetailBinding;
     private PopupDialog chooseIDTypeDialog;
     @Override
@@ -42,18 +42,18 @@ public class OrderDetailActivity extends BaseActivity implements PopupDialog.onD
             }
 
             @Override
-            public void onNegtiveClick(String type) {
+            public void onNegativeClick(String type) {
                 cancelDialog.dismiss();
             }
         });
-        carBean= (CarBean.CarList.CarListSubData) getIntent().getSerializableExtra("car_bean");
+        carBean= (BookBean.BookList.BookListSubData) getIntent().getSerializableExtra("book_bean");
         if (carBean==null){
             finish();
         }
         orderDetailBinding.createOrderTop.topTv.setText("创建订单");
         orderDetailBinding.createOrderName.setText("车型：NIO "+carBean.getName());
         orderDetailBinding.createOrderPriceTotalTv.setText("总价：￥ "+carBean.getPrice()*10000);
-        orderDetailBinding.createOrderVersion.setText("版本："+carBean.getVersion());
+        orderDetailBinding.createOrderVersion.setText("版本："+carBean.getAuthor());
         orderDetailBinding.createOrderImg.setImageDrawable(UITools.getDrawable(getResources(),carBean.getName()));
         orderDetailBinding.createOrderCity.setOnClickListener(new View.OnClickListener() {
             @Override

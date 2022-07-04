@@ -9,10 +9,10 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.lzhihua.bycar.databinding.ActivityManagerBinding;
-import com.lzhihua.bycar.network.NetworkUtil;
-import com.lzhihua.bycar.ui.dialog.LoginDialog;
-import com.lzhihua.bycar.ui.dialog.ManagerLoginDialog;
+import com.Syufei.bybook.databinding.ActivityManagerBinding;
+import com.Syufei.bybook.network.NetworkUtil;
+import com.Syufei.bybook.ui.dialog.LoginDialog;
+import com.Syufei.bybook.ui.dialog.ManagerLoginDialog;
 
 public class ManagerActivity extends AppCompatActivity implements LoginDialog.DialogListener {
     private ManagerLoginDialog managerLoginDialog;

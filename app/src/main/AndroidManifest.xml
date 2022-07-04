@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.Syufei.bycar">
+    package="com.Syufei.bybook">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,64 +16,64 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bycar">
         <activity
-            android:name=".MineMomentsActivity"
+            android:name="com.Syufei.bybook.MineMomentsActivity"
             android:exported="false" />
         <activity
-            android:name=".MomentDetailActivity"
+            android:name="com.Syufei.bybook.MomentDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ManageCarActivity"
+            android:name="com.Syufei.bybook.ui.ManageCarActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ManageAfterActivity"
+            android:name="com.Syufei.bybook.ui.ManageAfterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.TryCarListActivity"
+            android:name="com.Syufei.bybook.ui.TryCarListActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ManageTryarActivity"
+            android:name="com.Syufei.bybook.ui.ManageTryBookActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ManageOrderActivity"
+            android:name="com.Syufei.bybook.ui.ManageOrderActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ManagerActivity"
+            android:name="com.Syufei.bybook.ui.ManagerActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.CarDetailActivity"
+            android:name="com.Syufei.bybook.ui.BookDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ImpairActivity"
+            android:name="com.Syufei.bybook.ui.ImpairActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.CareActivity"
+            android:name="com.Syufei.bybook.ui.CareActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.TryCarActivity"
+            android:name="com.Syufei.bybook.ui.TryCarActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ReleaseMessageactivity"
+            android:name="com.Syufei.bybook.ui.ReleaseMessageactivity"
             android:exported="false" />
         <activity
-            android:name=".ui.PurchaseActivity"
+            android:name="com.Syufei.bybook.ui.PurchaseActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ImpairOrderActivity"
+            android:name="com.Syufei.bybook.ui.ImpairOrderActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.NoticeActivity"
+            android:name="com.Syufei.bybook.ui.NoticeActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.OrderDetailActivity"
+            android:name="com.Syufei.bybook.ui.OrderDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.OrderListActivity"
+            android:name="com.Syufei.bybook.ui.OrderListActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.Syufei.bybook.ui.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".StartActivity"
+            android:name="com.Syufei.bybook.StartActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

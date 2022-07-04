@@ -11,12 +11,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.MomentDetailActivity;
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CommunityBean;
-import com.lzhihua.bycar.ui.view.MultiImageView;
-import com.lzhihua.bycar.ui.viewmodel.MorefragViewmodel;
-import com.lzhihua.bycar.util.CommonTools;
+import com.Syufei.bybook.MomentDetailActivity;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.CommunityBean;
+import com.Syufei.bybook.ui.view.MultiImageView;
+import com.Syufei.bybook.ui.viewmodel.MorefragViewmodel;
+import com.Syufei.bybook.util.CommonTools;
 
 import java.util.ArrayList;
 import java.util.Arrays;

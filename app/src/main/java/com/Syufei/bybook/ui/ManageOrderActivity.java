@@ -8,14 +8,14 @@ import android.widget.ArrayAdapter;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.lzhihua.bycar.bean.ManagerBean;
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.databinding.ActivityManageOrderBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.ManagerRepo;
-import com.lzhihua.bycar.ui.adapter.ManagerOrderAdapter;
-import com.lzhihua.bycar.ui.presenter.UIShowListener;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.bean.ManagerBean;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.databinding.ActivityManageOrderBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.ManagerRepo;
+import com.Syufei.bybook.ui.adapter.ManagerOrderAdapter;
+import com.Syufei.bybook.ui.presenter.UIShowListener;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.ArrayList;
 import java.util.HashMap;

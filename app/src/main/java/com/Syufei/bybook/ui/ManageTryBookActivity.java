@@ -7,23 +7,23 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.lzhihua.bycar.bean.ManagerBean;
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.databinding.ActivityManageTryarBinding;
-import com.lzhihua.bycar.ui.adapter.ManageTrycarAdapter;
-import com.lzhihua.bycar.ui.viewmodel.ManageTrycarViewmodel;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.bean.ManagerBean;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.databinding.ActivityManageTrybookBinding;
+import com.Syufei.bybook.ui.adapter.ManageTrycarAdapter;
+import com.Syufei.bybook.ui.viewmodel.ManageTrycarViewmodel;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 
 public class ManageTryBookActivity extends BaseActivity {
     private ManageTrycarViewmodel manageTrycarViewmodel;
     private ManageTrycarAdapter adapter;
-    private ActivityManageTryarBinding manageTryarBinding;
+    private ActivityManageTrybookBinding manageTryarBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        manageTryarBinding=ActivityManageTryarBinding.inflate(getLayoutInflater());
+        manageTryarBinding=ActivityManageTrybookBinding.inflate(getLayoutInflater());
         manageTrycarViewmodel=new ViewModelProvider(this).get(ManageTrycarViewmodel.class);
         setContentView(manageTryarBinding.getRoot());
         adapter=new ManageTrycarAdapter(this);
@@ -31,9 +31,9 @@ public class ManageTryBookActivity extends BaseActivity {
         adapter.setManageTrycarViewmodel(manageTrycarViewmodel);
         manageTryarBinding.manageTryCarRecycler.setAdapter(adapter);
         manageTryarBinding.manageTryCarRecycler.setLayoutManager(new LinearLayoutManager(this));
-        manageTrycarViewmodel.getListLivedate().observe(this, new Observer<List<ManagerBean.TrycarList.Result>>() {
+        manageTrycarViewmodel.getListLivedate().observe(this, new Observer<List<ManagerBean.TrybookList.Result>>() {
             @Override
-            public void onChanged(List<ManagerBean.TrycarList.Result> results) {
+            public void onChanged(List<ManagerBean.TrybookList.Result> results) {
                 if(results!=null && results.size()==0){
                     UITools.showToast(ManageTryBookActivity.this,"没有更多数据了");
                 }else{

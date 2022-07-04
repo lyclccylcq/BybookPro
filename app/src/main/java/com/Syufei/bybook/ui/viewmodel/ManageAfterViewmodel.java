@@ -3,10 +3,10 @@ package com.Syufei.bybook.ui.viewmodel;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.bean.ManagerBean;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.ManagerRepo;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.bean.ManagerBean;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.ManagerRepo;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -93,7 +93,7 @@ public class ManageAfterViewmodel extends ViewModel {
             @Override
             public void onDataSuccess(Object obj) {
                 showProgress.setValue(false);
-                CarBean.CommonResponse commonResponse = (CarBean.CommonResponse) obj;
+                BookBean.CommonResponse commonResponse = (BookBean.CommonResponse) obj;
                 if (commonResponse.getStatus().equals("success")) {
                     queryData(typeLivedata.getValue());
                 }
@@ -112,7 +112,7 @@ public class ManageAfterViewmodel extends ViewModel {
             @Override
             public void onDataSuccess(Object obj) {
                 showProgress.setValue(false);
-                CarBean.CommonResponse commonResponse = (CarBean.CommonResponse) obj;
+                BookBean.CommonResponse commonResponse = (BookBean.CommonResponse) obj;
                 if (commonResponse.getStatus().equals("successq~")) {
 
                 }

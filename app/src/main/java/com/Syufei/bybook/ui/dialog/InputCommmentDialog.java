@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.databinding.InputCommentDialogBinding;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.databinding.InputCommentDialogBinding;
 
 public class InputCommmentDialog extends PopupDialog {
     private InputCommentDialogBinding binding;

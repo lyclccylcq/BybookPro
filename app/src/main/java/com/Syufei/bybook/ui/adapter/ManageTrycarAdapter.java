@@ -9,16 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.ManagerBean;
-import com.lzhihua.bycar.ui.viewmodel.ManageTrycarViewmodel;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.ManagerBean;
+import com.Syufei.bybook.ui.viewmodel.ManageTrycarViewmodel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class ManageTrycarAdapter extends RecyclerView.Adapter<ManageTrycarAdapter.ManageTrycarHolder> {
-    private List<ManagerBean.TrycarList.Result> carList=new ArrayList<>();
+    private List<ManagerBean.TrybookList.Result> carList=new ArrayList<>();
     private ManageTrycarViewmodel manageTrycarViewmodel;
 
     public void setManageTrycarViewmodel(ManageTrycarViewmodel manageTrycarViewmodel) {
@@ -29,9 +29,9 @@ public class ManageTrycarAdapter extends RecyclerView.Adapter<ManageTrycarAdapte
     public ManageTrycarAdapter(Context context){
         this.context=context;
     }
-    public void setCarList(List<ManagerBean.TrycarList.Result> carList) {
+    public void setCarList(List<ManagerBean.TrybookList.Result> carList) {
         if (carList!=null && carList.size()>0){
-            for (ManagerBean.TrycarList.Result result:carList){
+            for (ManagerBean.TrybookList.Result result:carList){
                 this.carList.add(result);
             }
         }
@@ -47,7 +47,7 @@ public class ManageTrycarAdapter extends RecyclerView.Adapter<ManageTrycarAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ManageTrycarHolder holder, int position) {
-        ManagerBean.TrycarList.Result result=carList.get(position);
+        ManagerBean.TrybookList.Result result=carList.get(position);
         holder.name.setText("试驾车型："+result.getCar().getName());
         holder.phone.setText("联系电话："+result.getPhone());
         holder.id.setText("订单id："+result.getId());

@@ -10,6 +10,6 @@ public class BookDetailActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_car_detail);
+        setContentView(R.layout.activity_book_detail);
     }
 }

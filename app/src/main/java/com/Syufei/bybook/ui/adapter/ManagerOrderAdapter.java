@@ -10,14 +10,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.bean.ManagerBean;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.ManagerRepo;
-import com.lzhihua.bycar.ui.presenter.UIShowListener;
-import com.lzhihua.bycar.util.CommonTools;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.bean.ManagerBean;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.ManagerRepo;
+import com.Syufei.bybook.ui.presenter.UIShowListener;
+import com.Syufei.bybook.util.CommonTools;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 
@@ -55,14 +55,14 @@ public class ManagerOrderAdapter extends RecyclerView.Adapter<ManagerOrderAdapte
         holder.orderAddress.setText("交付地址：" + result.getAddress());
         holder.orderUpdateTime.setText("更新时间：" + CommonTools.formatUtcTime(result.getUpdateTime()));
         holder.orderCreateTime.setText("创建时间：" + CommonTools.formatUtcTime(result.getCreateTime()));
-        holder.carName.setText("车辆系列：" + result.getCar().getName());
-        holder.carVersion.setText("车辆版本："+result.getCar().getVersion());
-        holder.carPrice.setText("基础价格："+result.getCar().getPrice());
+        holder.carName.setText("车辆系列：" + result.getBook().getName());
+        holder.carVersion.setText("车辆版本："+result.getBook().getAuthor());
+        holder.carPrice.setText("基础价格："+result.getBook().getPrice());
         holder.knowMore.setVisibility(position==resultList.size()-1? View.VISIBLE :View.GONE);
         holder.knowMore.setOnClickListener(view->{
             listener.requestData();
         });
-        holder.carImg.setImageDrawable(UITools.getDrawable(context.getResources(),result.getCar().getName()));
+        holder.carImg.setImageDrawable(UITools.getDrawable(context.getResources(),result.getBook().getName()));
         String statusString=result.getStatus()==-1? "已取消": status[result.getStatus()];
         holder.statusBar.setText(statusString);
         holder.statusBar.setTag(result);
@@ -116,7 +116,7 @@ public class ManagerOrderAdapter extends RecyclerView.Adapter<ManagerOrderAdapte
         ManagerRepo.processOrder(orderId, new DataSuccessListenter() {
             @Override
             public void onDataSuccess(Object obj) {
-                CarBean.CommonResponse commonResponse=(CarBean.CommonResponse) obj;
+                BookBean.CommonResponse commonResponse=(BookBean.CommonResponse) obj;
                 if (commonResponse.getStatus().equals("success")){
                     result.setStatus(2);
                 }
@@ -136,7 +136,7 @@ public class ManagerOrderAdapter extends RecyclerView.Adapter<ManagerOrderAdapte
         ManagerRepo.finishOrder(orderId, new DataSuccessListenter() {
             @Override
             public void onDataSuccess(Object obj) {
-                CarBean.CommonResponse commonResponse=(CarBean.CommonResponse) obj;
+                BookBean.CommonResponse commonResponse=(BookBean.CommonResponse) obj;
                 if (commonResponse.getStatus().equals("success")){
                     result.setStatus(3);
                 }

@@ -3,12 +3,15 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 31
+    viewBinding {
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "com.Syufei.bybook"
         minSdk 24
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 

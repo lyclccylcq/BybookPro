@@ -11,18 +11,18 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.commonui.CommonDialog;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.ManagerRepo;
-import com.lzhihua.bycar.ui.presenter.UIShowListener;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.commonui.CommonDialog;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.ManagerRepo;
+import com.Syufei.bybook.ui.presenter.UIShowListener;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 
 public class ManagerCarAdapter extends RecyclerView.Adapter<ManagerCarAdapter.ManagerCarHolder> {
-    private List<CarBean.CarList.CarListSubData> carList;
+    private List<BookBean.BookList.BookListSubData> carList;
     private Context context;
     private CommonDialog confirmDialog;
     private UIShowListener uiShowListener;
@@ -31,8 +31,8 @@ public class ManagerCarAdapter extends RecyclerView.Adapter<ManagerCarAdapter.Ma
         this.uiShowListener = uiShowListener;
     }
 
-    public void setCarList(List<CarBean.CarList.CarListSubData> carList) {
-        this.carList = carList;
+    public void setCarList(List<BookBean.BookList.BookListSubData> bookList) {
+        this.carList = bookList;
         notifyDataSetChanged();
     }
 
@@ -52,9 +52,9 @@ public class ManagerCarAdapter extends RecyclerView.Adapter<ManagerCarAdapter.Ma
 
     @Override
     public void onBindViewHolder(@NonNull ManagerCarHolder holder, int position) {
-        CarBean.CarList.CarListSubData subData = carList.get(position);
+        BookBean.BookList.BookListSubData subData = carList.get(position);
         holder.name.setText(subData.getName());
-        holder.version.setText(subData.getVersion());
+        holder.version.setText(subData.getAuthor());
         holder.description.setText(subData.getDescription());
         holder.carImg.setImageDrawable(UITools.getDrawable(context.getResources(), subData.getName()));
         holder.delbtn.setOnClickListener(view -> {
@@ -68,7 +68,7 @@ public class ManagerCarAdapter extends RecyclerView.Adapter<ManagerCarAdapter.Ma
                     ManagerRepo.deleteCar(subData.getId(), new DataSuccessListenter() {
                         @Override
                         public void onDataSuccess(Object obj) {
-                            CarBean.CommonResponse commonResponse = (CarBean.CommonResponse) obj;
+                            BookBean.CommonResponse commonResponse = (BookBean.CommonResponse) obj;
                             if (commonResponse.getStatus().equals("success")) {
                                 uiShowListener.requestData();
                             }
@@ -84,7 +84,7 @@ public class ManagerCarAdapter extends RecyclerView.Adapter<ManagerCarAdapter.Ma
                 }
 
                 @Override
-                public void onNegtiveClick(String type) {
+                public void onNegativeClick(String type) {
                     confirmDialog.dismiss();
                 }
             });

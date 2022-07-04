@@ -5,19 +5,19 @@ import android.os.Bundle;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.databinding.ActivityPurchaseBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.TryCarRepo;
-import com.lzhihua.bycar.ui.adapter.PurchaseAdapter;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.databinding.ActivityPurchaseBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.TryBookRepo;
+import com.Syufei.bybook.ui.adapter.PurchaseAdapter;
 
 import java.util.List;
 
 public class PurchaseActivity extends BaseActivity {
     private ActivityPurchaseBinding activityPurchaseBinding;
     private PurchaseAdapter purchaseAdapter;
-    private List<CarBean.CarList.CarListSubData> carList;
+    private List<BookBean.BookList.BookListSubData> carList;
 
 
     @Override
@@ -41,10 +41,10 @@ public class PurchaseActivity extends BaseActivity {
         activityPurchaseBinding.purchaseRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         purchaseAdapter.setCarList(carList);
         progressDialog.show();
-        TryCarRepo.getCarlist(new DataSuccessListenter() {
+        TryBookRepo.getBooklist(new DataSuccessListenter() {
             @Override
             public void onDataSuccess(Object obj) {
-                CarBean.CarList carBean=(CarBean.CarList) obj;
+                BookBean.BookList carBean=(BookBean.BookList) obj;
                 carList=carBean.getData().getList();
                 purchaseAdapter.setCarList(carList);
                 progressDialog.dismiss();

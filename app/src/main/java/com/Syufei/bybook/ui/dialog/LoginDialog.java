@@ -14,16 +14,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.bean.LoginBean;
-import com.lzhihua.bycar.common.BaseActivity;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.LoginRepo;
-import com.lzhihua.bycar.ui.MainActivity;
-import com.lzhihua.bycar.ui.ManagerActivity;
-import com.lzhihua.bycar.util.SharedPrefTools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.bean.LoginBean;
+import com.Syufei.bybook.common.BaseActivity;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.LoginRepo;
+import com.Syufei.bybook.ui.MainActivity;
+import com.Syufei.bybook.ui.ManagerActivity;
+import com.Syufei.bybook.util.SharedPrefTools;
 
 public class LoginDialog extends PopupDialog {
     private int TYPE = 0;//0:注册 1:登录 2:忘记密码
@@ -192,7 +192,7 @@ public class LoginDialog extends PopupDialog {
         LoginRepo.requestRegister(mail, password, name, new DataSuccessListenter() {
             @Override
             public void onDataSuccess(Object obj) {
-                CarBean.CommonResponse commonResponse = (CarBean.CommonResponse) obj;
+                BookBean.CommonResponse commonResponse = (BookBean.CommonResponse) obj;
                 if (commonResponse.getStatus().equals("success")) {
                     showToast("注册成功");
                     SharedPrefTools.put(context,"user_id",mail);

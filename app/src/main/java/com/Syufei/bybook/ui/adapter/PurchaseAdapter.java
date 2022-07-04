@@ -13,17 +13,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.ui.OrderDetailActivity;
-import com.lzhihua.bycar.ui.presenter.UIShowListener;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.ui.OrderDetailActivity;
+import com.Syufei.bybook.ui.presenter.UIShowListener;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 
 public class PurchaseAdapter extends RecyclerView.Adapter {
     private Context context;
-    private List<CarBean.CarList.CarListSubData> carList;
+    private List<BookBean.BookList.BookListSubData> carList;
     private UIShowListener listener;
 
     public void setListener(UIShowListener listener) {
@@ -34,7 +34,7 @@ public class PurchaseAdapter extends RecyclerView.Adapter {
         this.context = context;
     }
 
-    public void setCarList(List<CarBean.CarList.CarListSubData> carList) {
+    public void setCarList(List<BookBean.BookList.BookListSubData> carList) {
         this.carList = carList;
         notifyDataSetChanged();
     }
@@ -48,13 +48,13 @@ public class PurchaseAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        CarBean.CarList.CarListSubData car = carList.get(position);
+        BookBean.BookList.BookListSubData car = carList.get(position);
 
         ((PurchaseCarHolder) holder).priceTv.setText("￥ " + car.getPrice()*10000);
         ((PurchaseCarHolder) holder).nameTv.setText(car.getName());
         ((PurchaseCarHolder) holder).desTv.setText(car.getDescription());
         ((PurchaseCarHolder) holder).root.setTag(car.getId());
-        ((PurchaseCarHolder) holder).version.setText(car.getVersion());
+        ((PurchaseCarHolder) holder).version.setText(car.getAuthor());
         ((PurchaseCarHolder) holder).buy.setTag(car);
         ((PurchaseCarHolder) holder).buy.setOnClickListener(view -> {
              Intent intent=new Intent(context, OrderDetailActivity.class);

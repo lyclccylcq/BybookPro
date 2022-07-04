@@ -14,10 +14,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 
-import com.lzhihua.bycar.databinding.CarFragmentBinding;
-import com.lzhihua.bycar.ui.PurchaseActivity;
-import com.lzhihua.bycar.ui.TryCarActivity;
-import com.lzhihua.bycar.util.AnimationTools;
+import com.Syufei.bybook.databinding.CarFragmentBinding;
+import com.Syufei.bybook.ui.PurchaseActivity;
+import com.Syufei.bybook.ui.TryCarActivity;
+import com.Syufei.bybook.util.AnimationTools;
 
 public class CarFragment extends Fragment{
     private CarFragmentBinding carFragmentBinding;

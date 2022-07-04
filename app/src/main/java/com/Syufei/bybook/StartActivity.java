@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
-import com.lzhihua.bycar.common.BaseActivity;
+import com.Syufei.bybook.common.BaseActivity;
 
 import site.gemus.openingstartanimation.OpeningStartAnimation;
 
@@ -26,7 +26,7 @@ public class StartActivity extends BaseActivity  {
             //处理接收到的消息的方法
             @Override
             public boolean handleMessage(Message arg0) {
-                Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                Intent intent = new Intent(StartActivity.this, com.Syufei.bybook.ui.MainActivity.class);
                 startActivity(intent);
                 finish();
                 return false;

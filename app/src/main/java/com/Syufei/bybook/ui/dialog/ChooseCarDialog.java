@@ -9,13 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.CarBean;
-import com.lzhihua.bycar.commonui.PopupDialog;
-import com.lzhihua.bycar.databinding.ChooseCarDialogBinding;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.TryCarRepo;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.BookBean;
+import com.Syufei.bybook.commonui.PopupDialog;
+import com.Syufei.bybook.databinding.ChooseCarDialogBinding;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.TryBookRepo;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -24,7 +24,7 @@ import java.util.Set;
 
 public class ChooseCarDialog extends PopupDialog {
     private ChooseCarDialogBinding chooseCarDialogBinding;
-    private List<CarBean.CarList.CarListSubData> cars;
+    private List<BookBean.BookList.BookListSubData> cars;
     private Context context;
 
     public ChooseCarDialog(Context context) {
@@ -43,12 +43,12 @@ public class ChooseCarDialog extends PopupDialog {
     private void updateUI(){
         if (cars!=null && cars.size()>0){
             chooseCarDialogBinding.chooseCarContainer.removeAllViews();
-            for (CarBean.CarList.CarListSubData carListSubData:cars){
+            for (BookBean.BookList.BookListSubData carListSubData:cars){
                 View view=LayoutInflater.from(context).inflate(R.layout.choose_car_card,null,false);
                 view.setTag(carListSubData);
                 view.setOnClickListener(view1 -> {
                     Bundle bundle=new Bundle();
-                    bundle.putSerializable("car_bean",(CarBean.CarList.CarListSubData) view1.getTag());
+                    bundle.putSerializable("car_bean",(BookBean.BookList.BookListSubData) view1.getTag());
                     setData(bundle);
                     dismiss();
                 });
@@ -67,18 +67,18 @@ public class ChooseCarDialog extends PopupDialog {
         }
     }
     private void queryCarList(){
-        TryCarRepo.getCarlist(new DataSuccessListenter() {
+        TryBookRepo.getBooklist(new DataSuccessListenter() {
             @Override
             public void onDataSuccess(Object obj) {
-                CarBean.CarList carList = (CarBean.CarList) obj;
-                List<CarBean.CarList.CarListSubData> tmp=carList.getData().getList();
+                BookBean.BookList carList = (BookBean.BookList) obj;
+                List<BookBean.BookList.BookListSubData> tmp=carList.getData().getList();
                 //去重
                 Set<String> names=new HashSet<>();
 
-                for(CarBean.CarList.CarListSubData carListSubData:tmp){
-                    if(!names.contains(carListSubData.getName())){
-                        cars.add(carListSubData);
-                        names.add(carListSubData.getName());
+                for(BookBean.BookList.BookListSubData BookListSubData:tmp){
+                    if(!names.contains(BookListSubData.getName())){
+                        cars.add(BookListSubData);
+                        names.add(BookListSubData.getName());
                     }
                 }
                 updateUI();

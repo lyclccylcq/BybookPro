@@ -152,7 +152,7 @@ public class ImpairActivity extends BaseActivity implements PopupDialog.onDismis
     }
 
     @Override
-    public void onNegtiveClick(String type) {
+    public void onNegativeClick(String type) {
         confirmDialog.dismiss();
     }
 }

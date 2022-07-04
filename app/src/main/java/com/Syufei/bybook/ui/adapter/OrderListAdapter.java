@@ -11,13 +11,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzhihua.bycar.R;
-import com.lzhihua.bycar.bean.OrderBean;
-import com.lzhihua.bycar.network.DataSuccessListenter;
-import com.lzhihua.bycar.repo.OrderRepo;
-import com.lzhihua.bycar.ui.presenter.UIShowListener;
-import com.lzhihua.bycar.util.CommonTools;
-import com.lzhihua.bycar.util.UITools;
+import com.Syufei.bybook.R;
+import com.Syufei.bybook.bean.OrderBean;
+import com.Syufei.bybook.network.DataSuccessListenter;
+import com.Syufei.bybook.repo.OrderRepo;
+import com.Syufei.bybook.ui.presenter.UIShowListener;
+import com.Syufei.bybook.util.CommonTools;
+import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 
@@ -49,7 +49,7 @@ public class OrderListAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         OrderBean.OrderList.Result result = orderList.get(position);
-        ((OrderListHolder) holder).nameTv.setText(result.getCar().getName() + " " + result.getCar().getVersion());
+        ((OrderListHolder) holder).nameTv.setText(result.getBook().getName() + " " + result.getBook().getAuthor());
         ((OrderListHolder) holder).priceTv.setText("总计：￥" + result.getPrice()*10000);
         ((OrderListHolder) holder).createTimeTv.setText("订单创建时间：" + CommonTools.formatUtcTime(result.getCreateTime()));
         ((OrderListHolder) holder).updateTimeTv.setText("订单修改时间：" + CommonTools.formatUtcTime(result.getUpdateTime()));
@@ -57,7 +57,7 @@ public class OrderListAdapter extends RecyclerView.Adapter {
          String[] status=new String[]{"待支付","待处理","处理中","已完成"};
         ((OrderListHolder) holder).statusTv.setText(result.getStatus()==-1? "已取消" : status[result.getStatus()]);
         ((OrderListHolder) holder).msgBtn.setTag(result);
-        ((OrderListHolder) holder).imageView.setImageDrawable(UITools.getDrawable(context.getResources(),result.getCar().getName()));
+        ((OrderListHolder) holder).imageView.setImageDrawable(UITools.getDrawable(context.getResources(),result.getBook().getName()));
         if (result.getStatus() == -1 || result.getStatus() == 3) {
             ((OrderListHolder) holder).msgBtn.setVisibility(View.GONE);
         } else if (result.getStatus() == 0) {
