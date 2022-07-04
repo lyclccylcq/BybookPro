@@ -17,7 +17,7 @@
         android:textSize="16dp"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
-        android:textColor="#383a51"
+        android:textColor="@color/white"
         android:layout_marginLeft="25dp"
         android:layout_height="wrap_content"
         android:text="当前版本:  v2.0 正式版"/>
@@ -25,7 +25,7 @@
         android:textSize="16dp"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
-        android:textColor="#383a51"
+        android:textColor="@color/white"
         android:layout_marginLeft="25dp"
         android:layout_height="wrap_content"
         android:text="开发人员:  沈阳大街好果汁"/>
@@ -33,7 +33,7 @@
         android:textSize="16dp"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
-        android:textColor="#383a51"
+        android:textColor="@color/white"
         android:layout_marginLeft="25dp"
         android:layout_height="wrap_content"
         android:text="提示:本项目用于本小组工程实训，相关版权归本小组所有"/>

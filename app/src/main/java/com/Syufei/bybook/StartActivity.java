@@ -22,7 +22,7 @@ public class StartActivity extends BaseActivity  {
                 .setAppStatement("智能阅读，畅享未来") //设置一句话描述
                 .setAnimationFinishTime(3000) // 设置动画的消失时长
                 .create();
-        openingStartAnimation.show(this);
+        //openingStartAnimation.show(this);
         new Handler(new Handler.Callback() {
             //处理接收到的消息的方法
             @Override

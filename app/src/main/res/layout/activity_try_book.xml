@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:text="试读城市"
+                android:text="试读书籍"
                 android:textColor="@color/main_color"
                 android:textSize="16dp" />
 

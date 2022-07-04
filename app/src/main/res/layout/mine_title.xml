@@ -26,7 +26,7 @@
                 android:id="@+id/mine_title_login_msg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ByBook用户"
+                android:text="杀马特团长"
                 android:clickable="true"
                 android:textSize="16dp"
                 android:layout_marginTop="20dp"
