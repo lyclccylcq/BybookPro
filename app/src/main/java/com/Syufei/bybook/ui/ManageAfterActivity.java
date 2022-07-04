@@ -26,7 +26,7 @@ public class ManageAfterActivity extends BaseActivity implements PopupDialog.onD
     private ActivityManageAfterBinding binding;
     private ManageAfterViewmodel viewmodel;
     private ManageAfterAdapter adapter;
-    private FilterItemDialog filterItemDialog;//选择查询的订单类型，0代表维修单，1代表保养单
+    private FilterItemDialog filterItemDialog;//选择查询的订单类型，0代表换书单，1代表退书单
     private List<String> types;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +43,8 @@ public class ManageAfterActivity extends BaseActivity implements PopupDialog.onD
         filterItemDialog.setDialogType("filterItemDialog");
         filterItemDialog.setListener(this);
         types=new ArrayList<>();
-        types.add("维修订单");
-        types.add("保养订单");
+        types.add("换书订单");
+        types.add("退书订单");
         filterItemDialog.setItems(types);
         binding.manageAfterRefresh.setProgressBackgroundColorSchemeColor(Color.parseColor( "#ffffff"));
         binding.manageAfterRefresh.setColorSchemeColors(Color.parseColor("#00bcbc"));
@@ -98,7 +98,7 @@ public class ManageAfterActivity extends BaseActivity implements PopupDialog.onD
             public void onChanged(Boolean aBoolean) {
                 binding.manageAfterBottom.setVisibility(aBoolean? View.VISIBLE:View.GONE);
                 if (aBoolean){
-                    binding.manageAfterBottomId.setText("订单id："+viewmodel.getSelectId());
+                    binding.manageAfterBottomId.setText("订单Id："+viewmodel.getSelectId());
                     binding.manageAfterBottomPrice.setInputType(InputType.TYPE_CLASS_NUMBER);
                 }
             }
@@ -140,9 +140,9 @@ public class ManageAfterActivity extends BaseActivity implements PopupDialog.onD
     public void onDismiss(Bundle data, String type) {
         if (type.equals("filterItemDialog")){
             String select_item= (String) data.get("select_item");
-            if (select_item.equals("维修订单")){
+            if (select_item.equals("换书订单")){
                 viewmodel.getTypeLivedata().setValue(0);
-            }else if (select_item.equals("保养订单")){
+            }else if (select_item.equals("退书订单")){
                 viewmodel.getTypeLivedata().setValue(1);
             }
         }

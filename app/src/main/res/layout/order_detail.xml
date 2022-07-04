@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/create_order_tv1"
                 android:layout_marginBottom="10dp"
-                android:text="车型：NIO ec6"
+                android:text="书籍名称：雪国"
                 android:textColor="@color/main_color"
                 android:textSize="16dp" />
             <TextView
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_below="@id/create_order_name"
-                android:text="版本：运行型"
+                android:text="作者：川端康成"
                 android:textColor="@color/main_color"
                 android:textSize="16dp"/>
 
@@ -112,7 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:gravity="start"
-                    android:text="购车人"
+                    android:text="购书人"
                     android:textColor="@color/main_color"
                     android:textSize="16dp" />
                 <EditText
@@ -122,7 +122,7 @@
                     android:layout_weight="5"
                     android:gravity="start"
                     android:background="@null"
-                    android:hint="输入车主姓名"
+                    android:hint="输入书主姓名"
                     android:textColor="@color/main_color"
                     android:textSize="16dp" />
                 <ImageView
@@ -145,17 +145,17 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="start"
-                    android:text="购车类型"
+                    android:text="购书类型"
                     android:textColor="@color/main_color"
                     android:textSize="16dp" />
                 <CheckBox
                     android:layout_width="0dp"
                     android:layout_marginLeft="15dp"
-                    android:text="个人购车"
+                    android:text="个人购书"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"/>
                 <CheckBox
-                    android:text="企业购车"
+                    android:text="企业购书"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"/>
@@ -169,7 +169,7 @@
                 android:layout_below="@id/create_order_select_type"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="10dp"
-                android:text="车主信息"
+                android:text="书主信息"
                 android:textColor="@color/main_color"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -179,7 +179,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/create_order_tv3"
-                android:text="车主即车辆产权所有人，车主姓名和证件号码将使用在机动车销售统一发票，机动车登记证书和机动车驾驶证"
+                android:text="书主即书籍产权所有人，书主姓名和证件号码将使用在书籍销售统一发票"
                 android:textColor="@color/sub_color"
                 android:textSize="12dp" />
             <LinearLayout
@@ -231,7 +231,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:gravity="start"
-                    android:text="车主姓名"
+                    android:text="书主姓名"
                     android:textColor="@color/main_color"
                     android:textSize="16dp" />
                 <EditText
@@ -357,7 +357,7 @@
                     android:layout_weight="5"
                     android:gravity="end"
                     android:background="@null"
-                    android:text="￥ 390000"
+                    android:text="￥ 39"
                     android:textColor="@color/tips_color"
                     android:textSize="16dp" />
                 <ImageView
@@ -378,7 +378,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@color/spin_color"
                 android:padding="10dp"
-                android:text="* 供参考，具体金额由上牌时补贴政策决定\n\n** 购车价格由当地购车政策决定"
+                android:text="* 供参考，具体金额由下单时补贴活动决定\n\n** 购书价格由平台购书细则决定"
                 android:textColor="@color/sub_color" />
 
             <LinearLayout

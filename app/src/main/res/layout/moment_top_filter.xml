@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/moment_top_filter_moment"
         android:layout_width="0dp"
-        android:text="圈子"
+        android:text="书友圈"
         android:textSize="16dp"
         android:gravity="center"
         android:textColor="@color/main_color"

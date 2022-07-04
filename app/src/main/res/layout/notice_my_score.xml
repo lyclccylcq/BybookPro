@@ -69,9 +69,10 @@
             android:layout_marginRight="50dp"
             android:background="#f2f2f2"/>
     </LinearLayout>
+
     <ImageView
-        android:layout_below="@id/score_msg"
-        android:src="@drawable/score_background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score_msg"/>
+        //android:src="@drawable/score_background" />
 </RelativeLayout>

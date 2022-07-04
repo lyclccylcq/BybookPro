@@ -10,13 +10,13 @@
         android:layout_margin="10dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/user_avatar"/>
+        android:src="@drawable/user_avatars"/>
     <TextView
         android:layout_toRightOf="@id/comment_item_avatar"
         android:id="@+id/comment_item_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chenleely"
+        android:text="杀马特团长"
         android:layout_marginTop="30dp"
         android:textColor="@color/main_color"
         android:textSize="16dp"/>
@@ -29,7 +29,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:text="这是评论内容\nx\nx"
+        android:text="这是评论内容\n我就在沈阳大街等你嗷\n来沈阳，没你好果汁吃"
         android:textColor="@color/main_color"
         android:textSize="16dp" />
 
@@ -39,7 +39,7 @@
         android:layout_marginLeft="50dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/comment_item_content"
-        android:text="2022 4-16 19:00"
+        android:text="2022 6-16 19:00"
         android:textColor="@color/sub_color"
         android:textSize="14dp" />
     <TextView

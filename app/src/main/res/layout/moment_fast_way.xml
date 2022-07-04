@@ -12,7 +12,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/car_img_1"
+            android:src="@drawable/book_img_1"
             android:scaleType="centerCrop"/>
         <TextView
             android:layout_width="wrap_content"
@@ -21,19 +21,20 @@
             android:textColor="@color/white"
             android:textSize="16dp"
             android:layout_alignParentBottom="true"
-            android:text="购置新车"/>
+            android:text="购买新书"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_weight="1"
         android:id="@+id/moment_open_trycar"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/et7_2"
             android:layout_centerHorizontal="true"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/book_img_2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,19 +42,20 @@
             android:textSize="16dp"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:text="预约试驾"/>
+            android:text="预约试读"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_weight="1"
         android:id="@+id/moment_open_caring"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/impair_bg"
             android:layout_centerHorizontal="true"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/book_img_3" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,6 +63,6 @@
             android:textSize="16dp"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:text="维修中心"/>
+            android:text="退换中心"/>
     </RelativeLayout>
 </LinearLayout>

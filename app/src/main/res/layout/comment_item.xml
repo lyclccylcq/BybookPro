@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/comment_item_avatar"
-        android:text="Bycar用户"
+        android:text="ByBook用户"
         android:textColor="@color/main_color"
         android:textSize="14dp" />
     <TextView

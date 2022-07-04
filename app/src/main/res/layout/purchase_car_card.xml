@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="es8"
+        android:text="雪国"
         android:textColor="@color/main_color"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/purchase_card_name"
-        android:text="首发版"
+        android:text="川端康成"
         android:textColor="@color/main_color"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -39,7 +39,7 @@
         android:layout_below="@id/purchase_card_description"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:text="￥ 33.8万起"
+        android:text="￥ 39.0起"
         android:textColor="@color/tips_color"
         android:textSize="16dp" />
 
@@ -50,7 +50,7 @@
         android:layout_below="@id/purchase_card_name"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:text="电动智能旗舰轿车"
+        android:text="日本文学大奖获奖作品"
         android:textColor="@color/main_color"
         android:textSize="12dp" />
     <LinearLayout
@@ -82,5 +82,5 @@
         android:layout_height="150dp"
         android:layout_alignParentRight="true"
 
-        android:src="@drawable/es8_1" />
+        android:src="@drawable/xueguo" />
 </RelativeLayout>

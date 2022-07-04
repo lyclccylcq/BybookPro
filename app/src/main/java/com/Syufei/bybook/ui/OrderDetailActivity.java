@@ -23,7 +23,7 @@ import com.Syufei.bybook.util.UITools;
 public class OrderDetailActivity extends BaseActivity implements PopupDialog.onDismissListener {
 //    订单生成
     private CommonDialog cancelDialog;
-    private BookBean.BookList.BookListSubData carBean;
+    private BookBean.BookList.BookListSubData bookBean;
     private OrderDetailBinding orderDetailBinding;
     private PopupDialog chooseIDTypeDialog;
     @Override
@@ -34,7 +34,7 @@ public class OrderDetailActivity extends BaseActivity implements PopupDialog.onD
         setContentView(orderDetailBinding.getRoot());
         cancelDialog=new CommonDialog(this);
         cancelDialog.setTitle("确认要退出吗？");
-        cancelDialog.setMessage("现在退出将不能享受购车优惠哦...");
+        cancelDialog.setMessage("现在退出将不能享受购书优惠哦...");
         cancelDialog.setOnClickBottomListener(new CommonDialog.OnClickBottomListener() {
             @Override
             public void onPositiveClick(String type) {
@@ -46,15 +46,15 @@ public class OrderDetailActivity extends BaseActivity implements PopupDialog.onD
                 cancelDialog.dismiss();
             }
         });
-        carBean= (BookBean.BookList.BookListSubData) getIntent().getSerializableExtra("book_bean");
-        if (carBean==null){
+        bookBean = (BookBean.BookList.BookListSubData) getIntent().getSerializableExtra("book_bean");
+        if (bookBean ==null){
             finish();
         }
         orderDetailBinding.createOrderTop.topTv.setText("创建订单");
-        orderDetailBinding.createOrderName.setText("车型：NIO "+carBean.getName());
-        orderDetailBinding.createOrderPriceTotalTv.setText("总价：￥ "+carBean.getPrice()*10000);
-        orderDetailBinding.createOrderVersion.setText("版本："+carBean.getAuthor());
-        orderDetailBinding.createOrderImg.setImageDrawable(UITools.getDrawable(getResources(),carBean.getName()));
+        orderDetailBinding.createOrderName.setText("书籍名称： "+ bookBean.getName());
+        orderDetailBinding.createOrderPriceTotalTv.setText("总价：￥ "+ bookBean.getPrice()*1);
+        orderDetailBinding.createOrderVersion.setText("作者："+ bookBean.getAuthor());
+        orderDetailBinding.createOrderImg.setImageDrawable(UITools.getDrawable(getResources(), bookBean.getName()));
         orderDetailBinding.createOrderCity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +79,7 @@ public class OrderDetailActivity extends BaseActivity implements PopupDialog.onD
 
             }else {
                 progressDialog.show();
-                OrderRepo.createOrder(carBean.getId(), cityTv.getText().toString().trim(), new DataSuccessListenter() {
+                OrderRepo.createOrder(bookBean.getId(), cityTv.getText().toString().trim(), new DataSuccessListenter() {
                     @Override
                     public void onDataSuccess(Object obj) {
                         orderDetailBinding.createOrderCancel.setVisibility(View.GONE);
@@ -100,7 +100,7 @@ public class OrderDetailActivity extends BaseActivity implements PopupDialog.onD
         });
         orderDetailBinding.createOrderPay.setOnClickListener(view -> {
             progressDialog.show();
-            OrderRepo.orderPay("" + carBean.getId(), new DataSuccessListenter() {
+            OrderRepo.orderPay("" + bookBean.getId(), new DataSuccessListenter() {
                 @Override
                 public void onDataSuccess(Object obj) {
                     UITools.showToast(OrderDetailActivity.this, "支付成功");

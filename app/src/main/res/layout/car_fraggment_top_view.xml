@@ -4,21 +4,23 @@
     android:layout_width="match_parent"
     android:layout_marginTop="30dp"
     android:layout_height="50dp">
+
     <ImageView
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_centerVertical="true"
         android:layout_marginLeft="20dp"
-        android:src="@drawable/ic_mine_mycar"/>
+        android:src="@drawable/ic_mine_mybook" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
         android:layout_centerVertical="true"
-        android:textColor="@color/main_color"
-        android:text="ByCar"
         android:layout_marginLeft="50dp"
-        android:textStyle="bold"/>
+        android:text="ByBook"
+        android:textColor="@color/main_color"
+        android:textSize="16dp"
+        android:textStyle="bold" />
     <LinearLayout
         android:layout_toLeftOf="@id/car_frag_top_buy_car"
         android:id="@+id/car_frag_top_try_car"
@@ -29,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="预约试驾"
+            android:text="预约试读"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="10dp"

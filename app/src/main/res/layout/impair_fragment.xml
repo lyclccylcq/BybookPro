@@ -20,26 +20,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/impair_bg_1" />
+                android:src="@drawable/impair_bg_2" />
+
             <LinearLayout
                 android:id="@+id/impair_frag_top"
                 android:layout_width="match_parent"
-                android:layout_marginTop="30dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal">
+
                 <ImageView
-                    android:layout_gravity="end"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
+                    android:layout_gravity="end"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/ic_mine_mycar"/>
+                    android:src="@drawable/ic_mine_mybook" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="  Bycar  Caring"
-                    android:textSize="16dp"
-                    android:textColor="@color/white"/>
+                    android:text="  ByBook  Caring"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/impair_frag_top2"
@@ -53,7 +56,7 @@
                     android:id="@+id/impair_frag_top_impair"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修"
+                    android:text="退书"
                     android:textStyle="bold"
                     android:layout_marginRight="10dp"
                     android:textColor="@color/white"/>
@@ -61,7 +64,7 @@
                     android:id="@+id/impair_frag_top_caring"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="保养"
+                    android:text="换书"
                     android:textSize="14dp"
                     android:textColor="@color/white"/>
             </LinearLayout>
@@ -78,7 +81,7 @@
                 android:paddingTop="10dp"
                 android:paddingRight="50dp"
                 android:paddingBottom="10dp"
-                android:text="维修预约"
+                android:text="退换预约"
                 android:textColor="@color/white"
                 android:textSize="16dp" />
 

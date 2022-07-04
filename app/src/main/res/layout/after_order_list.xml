@@ -13,12 +13,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Spinner
             android:id="@+id/after_order_list_spinner"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/after_order_list_find"
-            android:entries="@array/after_order_list"
-            android:layout_height="wrap_content"/>
+            android:entries="@array/after_order_list" />
         <ImageView
             android:id="@+id/after_order_list_find"
             android:layout_width="25dp"

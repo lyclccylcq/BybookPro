@@ -66,8 +66,8 @@ public class TryCarListActivity extends BaseActivity {
                 TextView createTv=view.findViewById(R.id.order_list_car_create_time);
                 ImageView img=view.findViewById(R.id.order_list_car_img);
                 img.setImageDrawable(UITools.getDrawable(TryCarListActivity.this.getResources(),result.getBook().getName()));
-                carName.setText("NIO "+result.getBook().getName());
-                addressTv.setText("试驾地点："+result.getAddress());
+                carName.setText(" "+result.getBook().getName());
+                addressTv.setText("试读地点："+result.getAddress());
                 createTv.setText("创建时间："+ CommonTools.formatUtcTime(result.getCreateTime()));
                 cancelBtn.setTag(result);
                 LinearLayout.LayoutParams lp1=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);

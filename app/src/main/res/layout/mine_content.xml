@@ -12,20 +12,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我的车辆"
+            android:text="我的书籍"
             android:layout_marginLeft="20dp"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:textSize="16dp"
             android:textColor="@color/main_color"/>
+
         <ImageView
             android:layout_width="23dp"
             android:layout_height="23dp"
-            android:src="@drawable/ic_mine_mycar"
-            android:scaleType="centerCrop"
-            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentRight="true" />
+            android:layout_marginRight="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_mine_mybook" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/mine_content_score"

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="NIO  ES8 2022终极版"
+        android:text="雪国"
         android:textColor="@color/main_color"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -22,7 +22,7 @@
         android:layout_below="@id/order_list_car_name"
         android:layout_width="160dp"
         android:layout_height="120dp"
-        android:src="@drawable/ec6"/>
+        android:src="@drawable/xueguo"/>
 
     <TextView
         android:id="@+id/order_list_car_status"
@@ -42,7 +42,7 @@
         android:layout_below="@id/order_list_car_img"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="购入价格：383,000"
+        android:text="购入价格：39.0"
         android:textColor="@color/main_color"
         android:textSize="15dp" />
     <TextView
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="创建时间：2022-6-1"
+        android:text="创建时间：2022-7-1"
         android:layout_below="@id/order_list_car_address"
         android:textColor="@color/main_color"
         android:textSize="15dp" />
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="修改时间：2022-6-2"
+        android:text="修改时间：2022-7-2"
         android:layout_below="@id/order_list_car_create_time"
         android:textColor="@color/main_color"
         android:textSize="15dp" />

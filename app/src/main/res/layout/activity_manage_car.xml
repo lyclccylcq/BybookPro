@@ -7,7 +7,7 @@
     android:background="@color/spin_color"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.Syufei.bybook.ui.ManageCarActivity">
+    tools:context="com.Syufei.bybook.ui.ManageBookActivity">
     <include layout="@layout/common_top_bar"
         android:id="@+id/manage_car_top_bar"/>
     <LinearLayout
@@ -20,7 +20,7 @@
             android:id="@+id/manage_car_select_list"
             android:textSize="16dp"
             android:textColor="@color/tips_color"
-            android:text="车辆列表"
+            android:text="书籍列表"
             android:layout_width="0dp"
             android:gravity="center"
             android:clickable="true"
@@ -31,7 +31,7 @@
             android:textSize="16dp"
             android:clickable="true"
             android:textColor="@color/main_color"
-            android:text="添加车辆"
+            android:text="添加书籍"
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

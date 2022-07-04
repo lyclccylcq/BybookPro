@@ -29,18 +29,19 @@
         android:id="@+id/bottom_car"
         android:layout_height="match_parent"
         android:layout_weight="1">
+
         <ImageView
-            android:layout_width="25dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="25dp"
             android:id="@+id/bottom_car_iv"
-            android:background="@drawable/bottom_car"/>
+            android:layout_width="20dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bottom_car" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12dp"
             android:layout_gravity="center_horizontal"
-            android:text="购车"/>
+            android:text="购书"/>
     </LinearLayout>
 
     <LinearLayout
@@ -49,13 +50,14 @@
         android:id="@+id/bottom_impair"
         android:layout_height="match_parent"
         android:layout_weight="1">
+
         <ImageView
-            android:layout_width="25dp"
+            android:id="@+id/bottom_impair_iv"
+            android:layout_width="23dp"
+            android:layout_height="27dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="2dp"
-            android:layout_height="23dp"
-            android:id="@+id/bottom_impair_iv"
-            android:background="@drawable/bottom_impair"/>
+            android:background="@drawable/bottom_impair" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,11 +79,12 @@
             android:layout_height="25dp"
             android:id="@+id/bottom_mine_iv"
             android:background="@drawable/bottom_mine"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12dp"
             android:layout_gravity="center_horizontal"
-            android:text="我的"/>
+            android:text="我的"
+            android:textSize="12dp" />
     </LinearLayout>
 </LinearLayout>

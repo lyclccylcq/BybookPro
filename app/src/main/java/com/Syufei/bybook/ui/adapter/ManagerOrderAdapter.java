@@ -55,8 +55,8 @@ public class ManagerOrderAdapter extends RecyclerView.Adapter<ManagerOrderAdapte
         holder.orderAddress.setText("交付地址：" + result.getAddress());
         holder.orderUpdateTime.setText("更新时间：" + CommonTools.formatUtcTime(result.getUpdateTime()));
         holder.orderCreateTime.setText("创建时间：" + CommonTools.formatUtcTime(result.getCreateTime()));
-        holder.carName.setText("车辆系列：" + result.getBook().getName());
-        holder.carVersion.setText("车辆版本："+result.getBook().getAuthor());
+        holder.carName.setText("书籍名称：" + result.getBook().getName());
+        holder.carVersion.setText("书籍作者："+result.getBook().getAuthor());
         holder.carPrice.setText("基础价格："+result.getBook().getPrice());
         holder.knowMore.setVisibility(position==resultList.size()-1? View.VISIBLE :View.GONE);
         holder.knowMore.setOnClickListener(view->{

@@ -60,7 +60,7 @@ public class ManagerCarAdapter extends RecyclerView.Adapter<ManagerCarAdapter.Ma
         holder.delbtn.setOnClickListener(view -> {
             confirmDialog=new CommonDialog(context);
             confirmDialog.setTitle("提示");
-            confirmDialog.setMessage("确定要删除车辆吗，删除后数据库将不存在该车辆，操作不可逆。");
+            confirmDialog.setMessage("确定要删除书籍吗，删除后数据库将不存在该书籍，操作不可逆。");
 
             confirmDialog.setOnClickBottomListener(new CommonDialog.OnClickBottomListener() {
                 @Override

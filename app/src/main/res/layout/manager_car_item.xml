@@ -9,9 +9,9 @@
         android:id="@+id/manage_car_item_top_img"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:visibility="gone"
         android:layout_alignParentRight="true"
-        android:src="@drawable/manage_car_car_ic" />
+        android:src="@drawable/manage_book_book_ic"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/manage_car_item_name"
@@ -20,7 +20,7 @@
         android:layout_marginLeft="20dp"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="10dp"
-        android:text="ET 7"
+        android:text="雪国"
         android:textColor="@color/main_color"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -31,14 +31,14 @@
         android:layout_height="140dp"
         android:layout_marginLeft="10dp"
         android:layout_below="@id/manage_car_item_name"
-        android:src="@drawable/et7" />
+        android:src="@drawable/xueguo" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/manage_car_item_img"
         android:layout_below="@id/manage_car_item_name"
         android:id="@+id/manage_car_item_version"
-        android:text="版本：首发版"
+        android:text="作者：川端康成"
         android:textSize="16dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
@@ -49,7 +49,7 @@
         android:layout_toRightOf="@id/manage_car_item_img"
         android:layout_below="@id/manage_car_item_version"
         android:id="@+id/manage_car_item_price"
-        android:text="价格：￥ 383000.0"
+        android:text="价格：￥ 30.0"
         android:textSize="16dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
@@ -60,7 +60,7 @@
         android:layout_toRightOf="@id/manage_car_item_img"
         android:layout_below="@id/manage_car_item_price"
         android:id="@+id/manage_car_item_des"
-        android:text="描述：智能电动旗舰轿车"
+        android:text="描述：日本文学大奖获奖作品"
         android:textSize="16dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
@@ -75,7 +75,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/round_bg_4"
         android:gravity="center"
-        android:text="删除车辆"
+        android:text="删除书籍"
         android:layout_marginBottom="20dp"
         android:textColor="@color/tips_color"
         android:textSize="16dp" />

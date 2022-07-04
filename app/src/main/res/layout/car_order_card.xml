@@ -18,7 +18,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentTop="true"
-            android:src="@drawable/ic_mine_mycar"/>
+            android:src="@drawable/ic_mine_mybook"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:textColor="#383a51"
             android:textSize="18dp"
-            android:text="蔚来 ET7"/>
+            android:text="雪国 川端康成"/>
         <TextView
             android:id="@+id/order_car_price_tag"
             android:layout_width="wrap_content"
@@ -61,6 +61,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/order_car_price"
-            android:text="398500.0"/>
+            android:text="25.0"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

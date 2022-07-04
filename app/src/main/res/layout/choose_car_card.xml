@@ -11,7 +11,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
-        android:text="NIO  ES8"
+        android:text="雪国 川端康成"
         android:textColor="@color/main_color"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/choose_car_card_card_title"
         android:layout_marginLeft="25dp"
-        android:text="预约试驾"
+        android:text="预约试读"
         android:textColor="@color/main_color"
         android:textSize="16dp" />
 
@@ -32,7 +32,7 @@
         android:layout_height="150dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
-        android:src="@drawable/es8_1" />
+        android:src="@drawable/xueguo" />
 
     <View
         android:background="@color/spin_color"

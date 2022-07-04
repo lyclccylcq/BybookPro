@@ -17,8 +17,11 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="match_parent">
-            <include layout="@layout/car_fragment_purshase"
-                android:id="@+id/car_fragment_purchase"/>
+
+            <include
+                android:id="@+id/car_fragment_purchase"
+                layout="@layout/car_fragment_purshase" />
+
             <include layout="@layout/car_fragment_try_car"
                 android:id="@+id/car_fragment_try_car"/>
             <include layout="@layout/car_fragment_bottom"

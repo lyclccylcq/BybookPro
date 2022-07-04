@@ -10,28 +10,28 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.Syufei.bybook.bean.ManagerBean;
 import com.Syufei.bybook.common.BaseActivity;
 import com.Syufei.bybook.databinding.ActivityManageTrybookBinding;
-import com.Syufei.bybook.ui.adapter.ManageTrycarAdapter;
-import com.Syufei.bybook.ui.viewmodel.ManageTrycarViewmodel;
+import com.Syufei.bybook.ui.adapter.ManageTrybookAdapter;
+import com.Syufei.bybook.ui.viewmodel.ManageTrybookViewmodel;
 import com.Syufei.bybook.util.UITools;
 
 import java.util.List;
 
 public class ManageTryBookActivity extends BaseActivity {
-    private ManageTrycarViewmodel manageTrycarViewmodel;
-    private ManageTrycarAdapter adapter;
-    private ActivityManageTrybookBinding manageTryarBinding;
+    private ManageTrybookViewmodel manageTrybookViewmodel;
+    private ManageTrybookAdapter adapter;
+    private ActivityManageTrybookBinding manageTrybookBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        manageTryarBinding=ActivityManageTrybookBinding.inflate(getLayoutInflater());
-        manageTrycarViewmodel=new ViewModelProvider(this).get(ManageTrycarViewmodel.class);
-        setContentView(manageTryarBinding.getRoot());
-        adapter=new ManageTrycarAdapter(this);
+        manageTrybookBinding=ActivityManageTrybookBinding.inflate(getLayoutInflater());
+        manageTrybookViewmodel =new ViewModelProvider(this).get(ManageTrybookViewmodel.class);
+        setContentView(manageTrybookBinding.getRoot());
+        adapter=new ManageTrybookAdapter(this);
         setTransparentStatusBar();
-        adapter.setManageTrycarViewmodel(manageTrycarViewmodel);
-        manageTryarBinding.manageTryCarRecycler.setAdapter(adapter);
-        manageTryarBinding.manageTryCarRecycler.setLayoutManager(new LinearLayoutManager(this));
-        manageTrycarViewmodel.getListLivedate().observe(this, new Observer<List<ManagerBean.TrybookList.Result>>() {
+        adapter.setManageTrycarViewmodel(manageTrybookViewmodel);
+        manageTrybookBinding.manageTryCarRecycler.setAdapter(adapter);
+        manageTrybookBinding.manageTryCarRecycler.setLayoutManager(new LinearLayoutManager(this));
+        manageTrybookViewmodel.getListLivedate().observe(this, new Observer<List<ManagerBean.TrybookList.Result>>() {
             @Override
             public void onChanged(List<ManagerBean.TrybookList.Result> results) {
                 if(results!=null && results.size()==0){
@@ -41,24 +41,24 @@ public class ManageTryBookActivity extends BaseActivity {
                 }
             }
         });
-        manageTrycarViewmodel.getNetworkError().observe(this, new Observer<Boolean>() {
+        manageTrybookViewmodel.getNetworkError().observe(this, new Observer<Boolean>() {
             @Override
             public void onChanged(Boolean aBoolean) {
                 if (aBoolean){
-                    manageTryarBinding.manageTryCarRecycler.setVisibility(View.GONE);
-                    manageTryarBinding.manageTryCarNeterror.setVisibility(View.VISIBLE);
+                    manageTrybookBinding.manageTryCarRecycler.setVisibility(View.GONE);
+                    manageTrybookBinding.manageTryCarNeterror.setVisibility(View.VISIBLE);
                 }else{
-                    manageTryarBinding.manageTryCarRecycler.setVisibility(View.VISIBLE);
-                    manageTryarBinding.manageTryCarNeterror.setVisibility(View.GONE);
+                    manageTrybookBinding.manageTryCarRecycler.setVisibility(View.VISIBLE);
+                    manageTrybookBinding.manageTryCarNeterror.setVisibility(View.GONE);
                 }
             }
         });
-        manageTryarBinding.manageTryCarNeterror.setOnClickListener(view -> {
-            manageTrycarViewmodel.queryData();
+        manageTrybookBinding.manageTryCarNeterror.setOnClickListener(view -> {
+            manageTrybookViewmodel.queryData();
         });
-        manageTryarBinding.manageTryCarTopBar.titleBack.setOnClickListener(view -> {
+        manageTrybookBinding.manageTryCarTopBar.titleBack.setOnClickListener(view -> {
             finish();
         });
-        manageTryarBinding.manageTryCarTopBar.topTv.setText("试驾列表");
+        manageTrybookBinding.manageTryCarTopBar.topTv.setText("试读列表");
     }
 }

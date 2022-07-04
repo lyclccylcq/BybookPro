@@ -21,7 +21,7 @@ public class ManageAfterAdapter extends RecyclerView.Adapter<ManageAfterAdapter.
     private Context context;
     private ManageAfterViewmodel manageAfterViewmodel;
     private List<ManagerBean.AfterOrderList.Result> mList;
-    private String[] statusString=new String[]{"待处理","维修/保养中","待支付","已完成"};
+    private String[] statusString=new String[]{"待处理","换书/退书中","待支付","已完成"};
     private boolean isFolded=false;//是否折叠
 
     public void setFolded(boolean folded) {
@@ -52,14 +52,14 @@ public class ManageAfterAdapter extends RecyclerView.Adapter<ManageAfterAdapter.
     @Override
     public void onBindViewHolder(@NonNull ManageAfterHolder holder, int position) {
         ManagerBean.AfterOrderList.Result result=mList.get(position);
-        holder.id.setText("订单id："+result.getId());
+        holder.id.setText("订单Id："+result.getId());
         holder.price.setText("订单价格："+result.getPrice());
-        holder.address.setText("维修/保养地点："+result.getAddress());
+        holder.address.setText("换书/退书地点："+result.getAddress());
         holder.createTime.setText("创建时间："+ CommonTools.formatUtcTime(result.getCreateTime()));
         holder.updateTime.setText("更新时间："+ CommonTools.formatUtcTime(result.getUpdateTime()));
-        holder.carName.setText("车辆名称："+result.getCarResp().getName());
-        holder.carVersion.setText("车辆版本："+result.getCarResp().getAuthor());
-        holder.userId.setText("用户id："+result.getUserResp().getId());
+        holder.bookName.setText("书籍名称："+result.getCarResp().getName());
+        holder.bookAuthor.setText("书籍作者："+result.getCarResp().getAuthor());
+        holder.userId.setText("用户Id："+result.getUserResp().getId());
         holder.userName.setText("用户名："+result.getUserResp().getName());
         holder.phone.setText("联系电话："+result.getUserResp().getPhone());
         holder.process.setVisibility(result.getStatus()==0? View.VISIBLE :View.GONE);
@@ -99,8 +99,8 @@ public class ManageAfterAdapter extends RecyclerView.Adapter<ManageAfterAdapter.
         private TextView createTime;
         private TextView open;
         private LinearLayout other;
-        private TextView carName;
-        private TextView carVersion;
+        private TextView bookName;
+        private TextView bookAuthor;
         private TextView userName;
         private TextView userId;
         private TextView phone;
@@ -119,8 +119,8 @@ public class ManageAfterAdapter extends RecyclerView.Adapter<ManageAfterAdapter.
             createTime = itemView.findViewById(R.id.manage_after_order_create_time);
             open = itemView.findViewById(R.id.manage_after_order_open);
             other = itemView.findViewById(R.id.manage_after_order_other);
-            carName = itemView.findViewById(R.id.manage_after_order_car_name);
-            carVersion = itemView.findViewById(R.id.manage_after_order_car_version);
+            bookName = itemView.findViewById(R.id.manage_after_order_car_name);
+            bookAuthor = itemView.findViewById(R.id.manage_after_order_car_version);
             userName = itemView.findViewById(R.id.manage_after_order_user_name);
             userId = itemView.findViewById(R.id.manage_after_order_user_id);
             phone = itemView.findViewById(R.id.manage_after_order_user_phone);

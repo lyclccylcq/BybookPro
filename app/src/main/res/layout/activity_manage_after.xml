@@ -97,19 +97,20 @@
             android:textColor="@color/main_color"
             android:layout_toRightOf="@id/manage_after_bottom_close"
             android:id="@+id/manage_after_bottom_id"/>
+
         <EditText
             android:id="@+id/manage_after_bottom_price"
-            android:layout_below="@id/manage_after_bottom_close"
             android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
+            android:layout_below="@id/manage_after_bottom_close"
             android:layout_alignParentLeft="true"
-            android:gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:textColor="@color/main_color"
-            android:hint="请输入维修价格"
             android:background="@color/spin_color"
-            android:textSize="16dp"/>
+            android:gravity="center"
+            android:hint="请输入换书价格"
+            android:textColor="@color/main_color"
+            android:textSize="16dp" />
         <TextView
             android:id="@+id/manage_after_bottom_confirm"
             android:layout_width="50dp"

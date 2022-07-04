@@ -22,13 +22,13 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="@color/main_color"
-                android:text="维修方式"
+                android:text="退书方式"
                 android:layout_margin="10dp"/>
             <TextView
                 android:id="@+id/impair_act_helpcar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="上门取车"
+                android:text="上门取书"
                 android:gravity="center"
                 android:paddingTop="15dp"
                 android:paddingBottom="15dp"
@@ -40,7 +40,7 @@
                 android:id="@+id/impair_act_selfcar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="自主驾车"
+                android:text="网点寄送"
                 android:gravity="center"
                 android:paddingTop="15dp"
                 android:paddingBottom="15dp"
@@ -59,14 +59,14 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="@color/main_color"
-                android:text="维修信息"
+                android:text="退换信息"
                 android:layout_margin="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:textColor="@color/sub_color"
-                android:text="选择您需要维修/保养的车辆，我们将为您指派服务中心或工作人员，后续维修信息将通过短信通知，高峰时期可能需要等待，如给您带来不便深表歉意"
+                android:text="选择您需要退换的书籍，我们将为您指派服务中心或工作人员，后续退换信息将通过短信通知，高峰时期可能需要等待，如给您带来不便深表歉意"
                 android:layout_margin="15dp"/>
 
             <LinearLayout
@@ -77,7 +77,7 @@
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
-                    android:text="选择您的车辆"
+                    android:text="选择您的书籍"
                     android:gravity="start"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
@@ -134,7 +134,7 @@
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
-                    android:text="选择维修日期"
+                    android:text="选择退换日期"
                     android:gravity="start"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
@@ -163,7 +163,7 @@
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
-                    android:text="选择维修城市"
+                    android:text="选择退换城市"
                     android:gravity="start"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
@@ -235,7 +235,7 @@
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
-                    android:text="维修费*"
+                    android:text="邮费*"
                     android:gravity="start"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
@@ -247,7 +247,7 @@
                     android:background="@color/white"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
-                    android:text="￥ 500"
+                    android:text="￥ 50"
                     android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"/>
@@ -279,7 +279,7 @@
                     android:background="@color/white"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
-                    android:text="￥ 500"
+                    android:text="￥ 50"
                     android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"/>
@@ -299,7 +299,7 @@
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
-                    android:text="零部件费用*"
+                    android:text="包装费用*"
                     android:gravity="start"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
@@ -311,7 +311,7 @@
                     android:background="@color/white"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
-                    android:text="￥ 2000"
+                    android:text="￥ 50"
                     android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"/>
@@ -343,7 +343,7 @@
                     android:background="@color/white"
                     android:textColor="@color/main_color"
                     android:textSize="16dp"
-                    android:text="￥ 3000"
+                    android:text="￥ 150"
                     android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"/>
@@ -361,7 +361,7 @@
                 android:layout_margin="10dp"
                 android:background="@color/spin_color"/>
             <TextView
-                android:text="* 此处价格仅为估算价格，具体价格由后续店铺反馈\n* 维修增值服务及零部件选择请与维修部门沟通"
+                android:text="* 此处价格仅为估算价格，具体价格由后续店铺反馈\n* 换书增值服务及选择包装服务请与店家沟通"
                 android:textSize="12dp"
                 android:padding="5dp"
                 android:textColor="@color/sub_color"

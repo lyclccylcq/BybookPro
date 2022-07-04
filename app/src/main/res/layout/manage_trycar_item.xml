@@ -13,28 +13,28 @@
         android:layout_height="wrap_content"
         android:textColor="@color/main_color"
         android:textSize="16dp"
-        android:text="试驾编号：1"/>
+        android:text="试读编号：1"/>
     <TextView
         android:id="@+id/manage_try_car_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/main_color"
         android:textSize="16dp"
-        android:text="试驾地点：湖北武汉"/>
+        android:text="试读地点：湖北武汉"/>
     <TextView
         android:id="@+id/manage_try_car_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/main_color"
         android:textSize="16dp"
-        android:text="试驾车辆：ES9"/>
+        android:text="试读书籍：雪国"/>
     <TextView
         android:id="@+id/manage_try_car_tel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/main_color"
         android:textSize="16dp"
-        android:text="联系电话：1239485672"/>
+        android:text="联系电话：123456789"/>
     <TextView
         android:visibility="gone"
         android:layout_marginTop="10dp"

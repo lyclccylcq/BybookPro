@@ -18,7 +18,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/main_color"
             android:id="@+id/manage_after_order_id"
-            android:text="订单id：5"/>
+            android:text="订单ID：5"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -47,7 +47,7 @@
         android:layout_marginTop="5dp"
         android:textColor="@color/main_color"
         android:id="@+id/manage_after_order_address"
-        android:text="维修/保养地点：武汉"/>
+        android:text="退书/换书地点：武汉"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
         android:layout_marginTop="5dp"
         android:textColor="@color/main_color"
         android:id="@+id/manage_after_order_create_time"
-        android:text="创建时间：2022-4-24 19：00"/>
+        android:text="创建时间：2022-6-30 19：00"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
         android:layout_marginTop="5dp"
         android:textColor="@color/main_color"
         android:id="@+id/manage_after_order_update_time"
-        android:text="更新时间：2022-4-24 19：00"/>
+        android:text="更新时间：2022-7-02 19：00"/>
     <TextView
         android:id="@+id/manage_after_order_open"
         android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/main_color"
             android:id="@+id/manage_after_order_car_name"
-            android:text="车辆名称：蔚来es8 "/>
+            android:text="书籍名称：雪国"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/main_color"
             android:id="@+id/manage_after_order_car_version"
-            android:text="车辆版本：豪华版 "/>
+            android:text="作者：川端康成 "/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/main_color"
             android:id="@+id/manage_after_order_user_name"
-            android:text="用户名：罗志华"/>
+            android:text="用户名：杀马特团长"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/main_color"
             android:id="@+id/manage_after_order_user_id"
-            android:text="用户id：zhaozhiwei@gmail.com"/>
+            android:text="用户id：lyclccylcq@gmail.com"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/main_color"
             android:id="@+id/manage_after_order_user_phone"
-            android:text="联系电话：18832643549"/>
+            android:text="联系电话：16651320617"/>
         <TextView
             android:id="@+id/manage_after_order_close"
             android:layout_width="match_parent"

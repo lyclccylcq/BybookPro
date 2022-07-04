@@ -24,8 +24,8 @@ public class ImpairOrderActivity extends BaseActivity {
     private AfterOrderListBinding afterOrderListBinding;
     private AtomicInteger offset;
     private List<AfterOrderBean.AfterOrder.Result> afterList;
-    private String[] impairString=new String[]{"待处理","维修中","待支付","已完成"};
-    private String[] caringString=new String[]{"待处理","保养中","待支付","已完成"};
+    private String[] impairString=new String[]{"待处理","换书中","待支付","已完成"};
+    private String[] caringString=new String[]{"待处理","退书中","待支付","已完成"};
     //历史订单
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +63,10 @@ public class ImpairOrderActivity extends BaseActivity {
                 TextView createTime=itemView.findViewById(R.id.after_order_list_create_time);
                 TextView updateTime=itemView.findViewById(R.id.after_order_list_update_time);
                 TextView btn=itemView.findViewById(R.id.after_order_list_car_btn);
-                carName.setText("车辆名称："+result.getCarResp().getName());
-                version.setText("车辆版本："+result.getCarResp().getVersion());
+                carName.setText("书籍名称："+result.getBookResp().getName());
+                version.setText("书籍作者："+result.getBookResp().getAuthor());
                 userName.setText("用户名："+result.getUserResp().getName());
-                address.setText("维修城市："+result.getAddress());
+                address.setText("换书城市："+result.getAddress());
                 createTime.setText("创建时间："+CommonTools.formatUtcTime(result.getCreateTime()));
                 updateTime.setText("更新时间："+CommonTools.formatUtcTime(result.getUpdateTime()));
                 if (result.getStatus()==-1){
@@ -91,7 +91,7 @@ public class ImpairOrderActivity extends BaseActivity {
                         ImpairRepo.cancelAfterOrder(result.getId(), new DataSuccessListenter() {
                             @Override
                             public void onDataSuccess(Object obj) {
-                                CarBean.CommonResponse response=(CarBean.CommonResponse) obj;
+                                BookBean.CommonResponse response=(BookBean.CommonResponse) obj;
                                 if (response.getStatus().equals("success")){
                                     result.setStatus(-1);
                                     updateUI();

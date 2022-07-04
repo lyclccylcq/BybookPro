@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/bottom_car.xml" value="0.1" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/bottom_impair.xml" value="0.1" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/bottom_mine.xml" value="0.1" />
@@ -25,12 +26,12 @@
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_6.xml" value="0.1" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_bg_7.xml" value="0.1" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/drawable/round_dialog.xml" value="0.1" />
-        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/about_us.xml" value="0.1" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/about_us.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_book_detail.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_car_detail.xml" value="0.24139492753623187" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_care.xml" value="0.24139492753623187" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_create_after_order.xml" value="0.1578125" />
-        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_impair.xml" value="0.1578125" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_impair.xml" value="0.22" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_login.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/activity_manage_after.xml" value="0.24139492753623187" />
@@ -50,10 +51,10 @@
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/after_order_list.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/after_order_list_card.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/bottom_bar.xml" value="0.1578125" />
-        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fraggment_top_view.xml" value="0.1578125" />
-        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fragment.xml" value="0.1578125" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fraggment_top_view.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fragment.xml" value="0.22" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fragment_bottom.xml" value="0.1578125" />
-        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fragment_purshase.xml" value="0.1578125" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fragment_purshase.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_fragment_try_car.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/car_order_card.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/card_know_more.xml" value="0.1578125" />
@@ -61,11 +62,31 @@
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/choose_car_dialog.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/choose_city_dialog.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/choose_city_item.xml" value="0.1578125" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/choose_date_dialog.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/comment_item.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/commmon_text_view_1.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/common_dialog_list.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/common_dialog_top.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/common_top_bar.xml" value="0.1578125" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/create_user.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/custom_dialog.xml" value="0.1578125" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/filter_item.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/filter_item_dialog.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/forget_password.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/impair_fragment.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/input_comment_dialog.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/login.xml" value="0.22" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/manage_after_item.xml" value="0.2359375" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/manage_trycar_item.xml" value="0.2359375" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/manager_car_add_car_dialog.xml" value="0.2359375" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/manager_car_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/manager_order_card.xml" value="0.2359375" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/mine_content.xml" value="0.2359375" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/mine_fragment.xml" value="0.2359375" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/mine_title.xml" value="0.2359375" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/moment_comment_item.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/moment_detail_img.xml" value="0.21822916666666667" />
+        <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/moment_fast_way.xml" value="0.21822916666666667" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/moment_img_item.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/moment_item.xml" value="0.1578125" />
         <entry key="..\:/Users/10254/Desktop/Bybook/app/src/main/res/layout/moment_top_filter.xml" value="0.1578125" />

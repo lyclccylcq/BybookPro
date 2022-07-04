@@ -42,7 +42,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/user_avatar" />
+                    android:src="@drawable/user_avatars" />
 
                 <ImageView
                     android:id="@+id/moment_top_submit"
@@ -62,7 +62,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="20dp"
                     android:layout_toLeftOf="@id/moment_user_avatar"
-                    android:text="Bycar用户"
+                    android:text="杀马特团长"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
 

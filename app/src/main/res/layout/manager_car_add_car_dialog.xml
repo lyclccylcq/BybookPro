@@ -37,14 +37,14 @@
             android:layout_height="wrap_content"
             android:textColor="@color/main_color"
             android:textSize="16dp"
-            android:text="版本"/>
+            android:text="作者"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:layout_marginLeft="10dp"
-            android:hint="请输入车辆版本"
+            android:hint="请输入书籍作者"
             android:textColor="@color/main_color"
             android:id="@+id/add_car_dialog_car_version"/>
     </LinearLayout>
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:layout_marginLeft="10dp"
-            android:hint="请输入车辆价格"
+            android:hint="请输入书籍价格"
             android:textColor="@color/main_color"
             android:id="@+id/add_car_dialog_car_price"/>
     </LinearLayout>
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:layout_marginLeft="10dp"
-            android:hint="请输入车辆描述"
+            android:hint="请输入书籍描述"
             android:textColor="@color/main_color"
             android:id="@+id/add_car_dialog_car_description"/>
     </LinearLayout>

@@ -19,7 +19,7 @@ import com.Syufei.bybook.ui.dialog.ChooseDateDialog;
 import com.Syufei.bybook.ui.dialog.ChooseMycarDialog;
 
 public class ImpairActivity extends BaseActivity implements PopupDialog.onDismissListener, CommonDialog.OnClickBottomListener {
-    private int select = 0;//1：上门取车  2：自主驾车
+    private int select = 0;//1：上门取书 2：自主寄回
     private int type = -1;
     private ActivityImpairBinding activityImpairBinding;
     private int saleOrderId = -1;
@@ -37,7 +37,7 @@ public class ImpairActivity extends BaseActivity implements PopupDialog.onDismis
         confirmDialog = new CommonDialog(this);
         confirmDialog.setTitle("提示");
         confirmDialog.setOnClickBottomListener(this);
-        confirmDialog.setMessage("选择上门取车后工作人员会上门取车，并帮您完成整个维修/保养过程，您无需亲自到场，完成后工作人员会帮您把车开回原处（可能收取额外费用）");
+        confirmDialog.setMessage("选择上门取书后工作人员会上门取书，并帮您完成整个退/换过程，您无需亲自到场，完成后工作人员会帮您把书寄回原处（可能收取额外费用）");
         confirmDialog.setType("confirmDialog");
         errorDialog = new CommonDialog(this);
         errorDialog.setType("errorDialog");
@@ -52,7 +52,7 @@ public class ImpairActivity extends BaseActivity implements PopupDialog.onDismis
             activityImpairBinding.impairActSelfcar.setBackground(getResources().getDrawable(R.drawable.round_bg_5));
             select = 2;
         });
-        activityImpairBinding.impairActTop.topTv.setText("维修/保养");
+        activityImpairBinding.impairActTop.topTv.setText("换书/退书");
         activityImpairBinding.impairActTop.titleBack.setOnClickListener(view -> {
             finish();
         });
@@ -65,7 +65,7 @@ public class ImpairActivity extends BaseActivity implements PopupDialog.onDismis
         activityImpairBinding.impairActChooseCar.setOnClickListener(view -> {
             ChooseMycarDialog chooseMycarDialog = new ChooseMycarDialog(ImpairActivity.this);
             chooseMycarDialog.setDialogType("chooseCarDialog");
-            chooseMycarDialog.setTitle("选择车辆");
+            chooseMycarDialog.setTitle("选择书籍");
             chooseMycarDialog.setListener(this);
             chooseMycarDialog.show();
         });
