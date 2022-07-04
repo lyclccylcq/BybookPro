@@ -48,10 +48,10 @@ public class ManageTrybookAdapter extends RecyclerView.Adapter<ManageTrybookAdap
     @Override
     public void onBindViewHolder(@NonNull ManageTrycarHolder holder, int position) {
         ManagerBean.TrybookList.Result result=carList.get(position);
-        holder.name.setText("试驾车型："+result.getCar().getName());
+        holder.name.setText("试读书籍："+result.getCar().getName());
         holder.phone.setText("联系电话："+result.getPhone());
         holder.id.setText("订单id："+result.getId());
-        holder.address.setText("试驾地址："+result.getAddress());
+        holder.address.setText("试读城市："+result.getAddress());
         holder.more.setOnClickListener(view -> {
             manageTrybookViewmodel.queryData();
         });

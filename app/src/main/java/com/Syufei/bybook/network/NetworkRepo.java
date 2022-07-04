@@ -3,8 +3,8 @@ package com.Syufei.bybook.network;
 import java.util.Map;
 
 public class NetworkRepo {
-    public static final String Base_url = "http://louis296.top:8083";
-
+    public static final String Base_url = "http:louis296.top:8083";
+    //public static final String Base_url = "http://42.193.193.160:8082";
     public static class OkhttpOption {
         private String url;
         private String tag;//log时使用

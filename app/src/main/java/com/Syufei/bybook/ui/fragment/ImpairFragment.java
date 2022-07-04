@@ -84,18 +84,18 @@ public class ImpairFragment extends Fragment {
                     if ((curPosX - posX > 0) && (Math.abs(curPosX - posX) > 25)) {
 //                    Log.v(TAG,"向左滑动");
                         curIndex = curIndex == 0 ? 1 : 0;
-                        impairFragmentBinding.impairFragTopImg.setImageDrawable(curIndex==0? getResources().getDrawable(R.drawable.impair_bg_1)
+                        impairFragmentBinding.impairFragTopImg.setImageDrawable(curIndex==0? getResources().getDrawable(R.drawable.book_img_1)
                                 : getResources().getDrawable(R.drawable.caring_bg_1));
-                        impairFragmentBinding.impairFragBtn.setText(curIndex==0? "维修预约" :"保养预约");
+                        impairFragmentBinding.impairFragBtn.setText(curIndex==0? "换书预约" :"退书预约");
                         impairFragmentBinding.impairFragTopImpair.setTextSize(curIndex==0? 18:14);
                         impairFragmentBinding.impairFragTopCaring.setTextSize(curIndex==1? 18:14);
                         vibrator.vibrate(100);
                     } else if ((curPosX - posX < 0) && (Math.abs(curPosX - posX) > 25)) {
 //                    Log.v(TAG,"向右滑动");
                         curIndex = curIndex == 0 ? 1 : 0;
-                        impairFragmentBinding.impairFragTopImg.setImageDrawable(curIndex==0? getResources().getDrawable(R.drawable.impair_bg_1)
+                        impairFragmentBinding.impairFragTopImg.setImageDrawable(curIndex==0? getResources().getDrawable(R.drawable.book_img_3)
                                 : getResources().getDrawable(R.drawable.caring_bg_1));
-                        impairFragmentBinding.impairFragBtn.setText(curIndex==0? "维修预约" :"保养预约");
+                        impairFragmentBinding.impairFragBtn.setText(curIndex==0? "换书预约" :"退书预约");
                         impairFragmentBinding.impairFragTopImpair.setTextSize(curIndex==0? 18:14);
                         impairFragmentBinding.impairFragTopCaring.setTextSize(curIndex==1? 18:14);
                         vibrator.vibrate(100);

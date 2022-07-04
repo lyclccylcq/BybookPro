@@ -31,7 +31,7 @@ import com.Syufei.bybook.ui.adapter.ManagerCarAdapter;
 import com.Syufei.bybook.ui.presenter.UIShowListener;
 import com.Syufei.bybook.util.UITools;
 
-public class ManageBookActivity extends BaseActivity implements UIShowListener , SwipeRefreshLayout.OnRefreshListener {
+public class ManageCarActivity extends BaseActivity implements UIShowListener , SwipeRefreshLayout.OnRefreshListener {
     private ManagerCarAdapter managerCarAdapter;
     private ActivityManageCarBinding manageCarBinding;
     private int selectIndex = 0;//0:车辆列表  1:添加车辆
@@ -96,7 +96,7 @@ public class ManageBookActivity extends BaseActivity implements UIShowListener ,
                     public void onDataSuccess(Object obj) {
                         BookBean.CommonResponse commonResponse=(BookBean.CommonResponse) obj;
                         if (commonResponse!=null && commonResponse.getStatus().equals("success")){
-                            UITools.showToast(ManageBookActivity.this,"创建成功");
+                            UITools.showToast(ManageCarActivity.this,"创建成功");
                             requestData();
                         }
                     }
@@ -107,7 +107,7 @@ public class ManageBookActivity extends BaseActivity implements UIShowListener ,
                     }
                 });
             }else{
-                UITools.showToast(ManageBookActivity.this,"信息不完整");
+                UITools.showToast(ManageCarActivity.this,"信息不完整");
             }
         });
         manageCarBinding.manageCarRefresh.setOnRefreshListener(this);
@@ -161,9 +161,9 @@ public class ManageBookActivity extends BaseActivity implements UIShowListener ,
     }
 
     public void openPhoto(){
-        if(ContextCompat.checkSelfPermission(ManageBookActivity.this,
+        if(ContextCompat.checkSelfPermission(ManageCarActivity.this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(ManageBookActivity.this,new String[]{
+            ActivityCompat.requestPermissions(ManageCarActivity.this,new String[]{
                     Manifest.permission.WRITE_EXTERNAL_STORAGE
             },1);
         }

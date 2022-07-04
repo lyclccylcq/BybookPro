@@ -22,7 +22,7 @@
             android:name="com.Syufei.bybook.MomentDetailActivity"
             android:exported="false" />
         <activity
-            android:name="com.Syufei.bybook.ui.ManageBookActivity"
+            android:name="com.Syufei.bybook.ui.ManageCarActivity"
             android:exported="false" />
         <activity
             android:name="com.Syufei.bybook.ui.ManageAfterActivity"

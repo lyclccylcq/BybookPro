@@ -48,7 +48,7 @@ public class ManagerActivity extends AppCompatActivity implements LoginDialog.Di
             startActivity(intent);
         });
         managerBinding.managerMainMoney.setOnClickListener(view -> {
-            Intent intent=new Intent(ManagerActivity.this, ManageBookActivity.class);
+            Intent intent=new Intent(ManagerActivity.this, ManageCarActivity.class);
             startActivity(intent);
         });
     }

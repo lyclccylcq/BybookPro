@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:layout_marginLeft="10dp"
-            android:hint="请输入车辆名称"
+            android:hint="请输入书籍名称"
             android:textColor="@color/main_color"
             android:id="@+id/add_car_dialog_car_name"/>
     </LinearLayout>

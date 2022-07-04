@@ -45,7 +45,7 @@ public class MineFragment extends Fragment implements LoginDialog.DialogListener
         //content部分
         mineFragmentBinding.mineContent.mineContentMycar.setOnClickListener(view -> {
             ChooseMycarDialog chooseMycarDialog=new ChooseMycarDialog(getContext());
-            chooseMycarDialog.setTitle("我的车辆");
+            chooseMycarDialog.setTitle("我的书籍");
             chooseMycarDialog.show();
         });
         mineFragmentBinding.mineContent.mineContentBill.setOnClickListener(view -> {
@@ -100,7 +100,7 @@ public class MineFragment extends Fragment implements LoginDialog.DialogListener
         }else{
             mineFragmentBinding.mineTitle.mineTitleLoginUid.setVisibility(View.VISIBLE);
             mineFragmentBinding.mineContent.mineContentQuit.setVisibility(View.VISIBLE);
-            mineFragmentBinding.mineTitle.mineTitleLoginMsg.setText("Bycar用户");
+            mineFragmentBinding.mineTitle.mineTitleLoginMsg.setText("ByBook用户");
         }
     }
 }
